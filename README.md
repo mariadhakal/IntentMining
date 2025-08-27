@@ -7,6 +7,7 @@ This is a replication of the "Intent Mining from past conversations for Conversa
 This repository implements ITER-DBSCAN (Iterative DBSCAN) for unbalanced data clustering, specifically designed for conversational intent mining from utterances. The algorithm iteratively adapts DBSCAN parameters to find high to low density clusters.
 
 **Original Paper**: [Intent Mining from past conversations for Conversational Agent](https://www.aclweb.org/anthology/2020.coling-main.366/)
+**Original Repository**: https://github.com/ajaychatterjee/IntentMining
 
 ## Key Features
 
