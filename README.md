@@ -8,6 +8,8 @@ This repository implements ITER-DBSCAN (Iterative DBSCAN) for unbalanced data cl
 
 **Original Paper**: [Intent Mining from past conversations for Conversational Agent](https://www.aclweb.org/anthology/2020.coling-main.366/)
 
+**Original Repository**: https://github.com/ajaychatterjee/IntentMining
+
 ## Key Features
 
 - **Modern Dependencies**: Uses `sentence-transformers` instead of deprecated `tensorflow_hub`
