@@ -9,11 +9,11 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
 setup(
     name="intent-mining",
     version="1.0.0",
-    author="Intent Mining Team",
-    description="Modern implementation of Intent Mining using ITER-DBSCAN with sentence-transformers",
+    author="Ajay Chatterjee, Shubhashis Sengupta",
+    description="Implementation of Intent Mining using ITER-DBSCAN with sentence-transformers",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/your-repo/intent-mining",
+    url="https://github.com/mariadhakal/IntentMining",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 4 - Beta",
