@@ -4,7 +4,9 @@ from sklearn.metrics import adjusted_rand_score, normalized_mutual_info_score, s
 from sklearn.metrics.cluster import contingency_matrix
 import matplotlib.pyplot as plt
 import seaborn as sns
-
+import os
+import re
+from datetime import datetime  
 
 class EvaluateDataset:
     """
@@ -27,6 +29,12 @@ class EvaluateDataset:
             Dictionary containing evaluation metrics
         """
         results = {}
+        
+        # Ensure numpy arrays for vectorized ops
+        true_labels = np.asarray(true_labels)
+        predicted_labels = np.asarray(predicted_labels)
+        if embeddings is not None:
+            embeddings = np.asarray(embeddings)
         
         # Remove noise points (-1) for evaluation
         valid_mask = predicted_labels != -1
@@ -63,15 +71,18 @@ class EvaluateDataset:
             
         return results
     
-    def plot_cluster_distribution(self, labels, title="Cluster Distribution"):
+    def plot_cluster_distribution(self, labels, title="Cluster Distribution", save_path=None):
         """
         Plot the distribution of cluster sizes
-        
+
         Args:
             labels: Cluster labels
             title: Plot title
+            save_path: Optional path to save the PNG (e.g., '/path/to/plot.png').
+                       If None, a filename is derived from the title in the current working directory.
         """
         # Remove noise points
+        labels = np.asarray(labels)
         valid_labels = labels[labels != -1]
         
         if len(valid_labels) == 0:
@@ -88,7 +99,22 @@ class EvaluateDataset:
         plt.xticks(range(len(cluster_counts)), cluster_counts.index)
         plt.grid(True, alpha=0.3)
         plt.tight_layout()
+
+        # Save plot as PNG
+        if save_path is None:
+            safe_title = re.sub(r'[^A-Za-z0-9_-]+', '_', title).strip('_') or "cluster_distribution"
+            filename = f"{safe_title}.png"
+            save_dir = os.getcwd()
+            save_path = os.path.join(save_dir, filename)
+        else:
+            save_dir = os.path.dirname(save_path) or os.getcwd()
+            os.makedirs(save_dir, exist_ok=True)
+
+        plt.savefig(save_path, dpi=200, bbox_inches='tight')
+        print(f"Plot saved to {save_path}")
+
         plt.show()
+        plt.close()
         
         print(f"Cluster distribution:")
         print(f"Number of clusters: {len(cluster_counts)}")

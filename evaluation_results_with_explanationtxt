@@ -1,0 +1,13 @@
+Clustering Evaluation Results
+========================================
+
+adjusted_rand_score (ARI): 0.3492 => Measures agreement between predicted clusters and true labels, adjusted for chance.
+normalized_mutual_info_score: 0.7365 (NMI) => Information-theoretic overlap between predicted clusters and true labels.
+silhouette_score (cosine): 0.3211 => how well points fit within their cluster vs. nearest other cluster. > 0.5: well-separated and compact clusters; ~0.2–0.5: some overlap; ≤ 0: poor structure/misassignment.
+n_clusters: 139 => Number of non-noise clusters found. Very high values might indicate over-segmentation; very low values under-segmentation.
+n_noise_points: 521 => Count of points labeled -1 (outliers). High noise can be fine for DBSCAN-like methods;
+n_valid_points: 724 => Number of points used in ARI/NMI/Silhouette (i.e., not noise).
+
+
+Use ARI/NMI for external validity (agreement with ground truth); use silhouette for internal quality (structure in the embedding space).
+Good: ARI/NMI closer to 1, silhouette >0.3–0.5, moderate clusters, moderate noise.

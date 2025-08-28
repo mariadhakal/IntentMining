@@ -1,0 +1,1257 @@
+text,cluster_id,true_label
+I'm getting a little loopy.,61,expressing emotion
+Very well. Understood. That's for sure.,66,acknowledging understanding
+It's a lot of emails I've gone through. I've gone through more in the last two weeks than ever in a two week time span. OK. Did you all have anything specific you wanted to talk about?,65,providing status update
+"Speaking of emails. Earlier in the week, Susan, I sent you an email about location groups.",42,referencing previous communication
+[indecipherable] I haven't gotten back to that one yet. I do remember reading it...Stop it!,2,noise
+41] [laughter],0,noise
+Slacker.,-1,noise
+Slacker? That's me. Goofing off. I'll find out the answers and get them to you.,-1,expressing emotion
+Thank you. Would that be related to the ICP clusters?,-1,asking for clarification
+"Yeah. I know Peggy and I talked about it, because she was working on some documentation and had a few questions [indecipherable] sent on to Susan.",48,discussing documentation questions
+"One of Larry's group [indecipherable] was wondering...I don't know, I hope it's in an email about, I think Susan or somebody explained you could [indecipherable] location groups, or there wasn't an opportunity to do global ones. We need to get those clusters back in, or started.",18,requesting clarification on location groups and clustering functionality
+Anything else that we need to talk about?,11,requesting additional topics
+"Jim, do you have anything else?",11,requesting update
+"No, I'm good.",53,expressing status
+"So, Jim, the last email that Brian sent in regards to those CLLIs that we can't match as an exchange? I know we're getting down to the wire. I don't think that Ken and I can weigh in on that, as to what he wants to do.",16,requesting clarification on task status
+"I've got it open, here. That was one of my two things, so I'll jump to that one. Yeah, Brian...Let's see, where are we? The company plant couldn't find a CLLI code.",6,starting a task
+"Yeah. It's cryptic, so I apologize. Those two other formats for the pseudo-CLLIes. One of them starts with the four characters. Plant, followed by the state, followed by the sub-plant. The right two characters of the company. The other one is what I call the x-pseudos, where you have x company plant and sub-plant.",-1,explaining data format details
+18] None of those exist at all in those network element files that DJ sent my way. I was trying to marry up them by company plant and sub-plant. I had some pretty moderate success with that.,20,reporting progress on data matching task
+"Actually, a different email [indecipherable] . Ship this one.",9,requesting deployment
+"It was probably...It kind of looks like it. I did just company, plant at first. Then I tried company, plant, and zip code. I got a little bit better results with that. There's still the company, plant combination either doesn't exist in the CLLIs that exist in those network element files, or the combination yields too many...There's not a distinct exchange, otherwise, for that combination.",6,explaining troubleshooting results
+What are you bouncing off of? I don't know.,-1,"expressing confusion
+expressing confusion"
+There was three files. ,-1,reporting a fact
+"DJ, would probably be better to chime in on this one.",8,suggesting participation
+"It was network elements, Jim, that I was provided by Cathy Johns. I gave him those three documents that match. It was network elements and the OAC. The other one was asset accounting. Do you want a copy of them?",44,providing project documentation
+Asset accounting?,-1,requesting clarification
+Asset accounting was the OAC and the...,-1,expressing incomplete information
+"OK. No. Let me just back up then. That's good enough to get me started to help. I know that it's critical, seeing what we missed. In my explanation, I'd say, is there any way to take that company plant, that you said we figured was buried in that, through those CLLI codes?",6,requesting clarification
+"38] Use that company plant to first map to the CLLI six of the [indecipherable] key data? Oh, so you did do that.",20,expressing confusion
+Yes.,1,affirmation
+"With that, you'd have to go over to Cathy Johns, OK.",-1,providing instruction
+Right.,1,noise
+That doesn't make sense. I'm not questioning you but...,61,expressing confusion
+I totally understand.,66,expressing understanding
+"[indecipherable] . You're saying for company plant combination, like in California, 9WC whatever plan code, that could come to us, there's multiple CLLI sixes? Leave out the building?",6,expressing confusion
+"Not necessarily different CLLI sixes, but those CLLI sixes didn't have the state exchange codes.",68,providing technical clarification
+Really?,66,expressing emotion
+Yeah.,1,noise
+"These don't look like anything I've ever seen before, so Ken and I were talking about it, and...",-1,expressing uncertainty
+41] [crosstalk],0,noise
+"So, I'm scared to do anything on these, because I don't want there to be bad accounting data on there, but I also don't want them to fall out, either. Could I maybe take the most popular exchange code out of the...? That's kind of almost a quirky, [indecipherable] thing to do, and I feel like exactly like what Susan motioned to do, like I'm kind of throwing a dart.",45,expressing concern about data integrity
+"DJ, if I pull up 9WC0201, you're going to get a long list of company plants, different sub plants, and you're going to get some valid CLLI codes, and invalid ones. To me, an exchange boundary [indecipherable] like Marion, Ohio added one exchange, and then small little remotes off of Marion, it's the same exchange. I thought the exchange was a broader, defining area, so I was hoping.",45,explaining data structure and domain concept confusion
+49] It sounds like that didn't work. What did we do with the net pseudos?,46,requesting clarification
+"That was the lowly thing about net, is that each of the pseudos itself had the company code on there. In the net table itself, the CO profile table, there was that Infinium company code OAC in exchange field for each record.",45,explaining a technical detail
+That's because we went in and cleaned those up prior to passing the data to you.,24,explaining completed work
+"Which is going to be more difficult, and probably impossible to do in this case, because you could probably clean them up [indecipherable] extract 4, but then when we get the next extract, then there's going to be more stuff in there, potentially, that we haven't even considered. It would be nice if we had more broader swath.",-1,discussing data extraction challenges
+"54] I like Jim's rules, that mindset of, if we had CLLI six, we could map it to an exchange that way. That was incredibly beneficial. It's just it's not fully working.",30,discussing technical approach and its limitations
+"Don't you all have to, or somebody have to map these CLLIs to Infinium?",6,asking for task assignment clarification
+The pseudo ones?,23,asking for clarification
+Yeah. Or do they not use the pseudos in Infinium?,6,asking a clarifying question
+"Like Ken said, in net we already clean them up, so yeah, we'll eventually have to map them to Infinium.",-1,discussing data mapping plan
+"No, I mean for Infinium to go live with this Verizon data in April, doesn't somebody have to map this stuff? I don't understand.",20,requesting clarification on task responsibility
+They'll map it by...I'll check with the Infinium folks.,20,planning to consult with external team
+"DJ, I know you haven't said this directly, but isn't some of the work that the IT department is going to be doing on this data before we get it, some of the work that they have to do so that Infinium will have their information on that, to the Verizon...?",20,seeking clarification about data processing responsibilities
+18] [crosstalk],0,noise
+"I said, I didn't finish my thought. Now remember, in Infinium, they don't even look at the CLLI code. [indecipherable] thing, so they're just looking at the company plant, sub plant, and going by the CO code and business unit. They're defining it that way. So, Infinium doesn't even look at these pseudo-CLLIs or CLLIs. Go ahead, DJ, I interrupted you to answer the other part.",6,explaining technical details
+47] I just wanted to clarify.,0,seeking clarification
+"No, that's good.",4,acknowledging completion
+"Pulling it in [indecipherable] , it's like you said. This doesn't have anything to do with the CLLIs, but, you'd think there was something that we could match it up with.",6,expressing uncertainty
+02] [crosstalk],0,noise
+"Those three digits, let me send out another file, but, those three digits that have [indecipherable] from the very top, if you look at 225WC, the does WC stand for wire center? Or not?",56,asking for clarification about terminology
+She told me about...,67,expressing incomplete information
+"No, it was out in California. 9WC was the company code.",68,providing background information
+"Since the Infinium folks are going to have to deal with this, probably on the case-by-case basis as they encounter the new sub plants, I assume, could we put maybe a placeholder on these that we can't figure out and get them in that way? And then they could be dealt with on the case-by-case basis as they get encountered in LCAM? Is that a possibility?",6,requesting a provisional solution for unresolved items
+"That's a good question. Ken, we need to get with Sarah, I think, [indecipherable] she's got to go into Infinium anyway, and fixed assets, so we should be able to get those exchanges.",-1,planning collaboration with team members
+[indecipherable] . The data that she sent to you...,16,noise
+10] [crosstalk],0,noise
+"So if that's true, then we could probably just come up with a pattern, like Drake said, of an exchange code. Because the exchange code helps me link back to that other file that DJ gave me that had that exhaustive list of LACs and company codes. I've had not a single problem matching up the exchange codes I've found back to that list, so I think that's perfect there.",13,proposing a solution based on existing data
+"50] The only thing that I would need to put in there would be a place holder for the exchange code, the company code, and the OAC. If we just came up with some sort of thing that, it's blatantly obvious to whoever's using that part of LCAM, goes, ""Oh, yeah, I know I need to do this when I come across this,"" then that would at least get [indecipherable] through this part to the next thing.",45,requesting placeholder design guidance
+"18] So, if that's OK with you guys, I'll just...we'll figure out what looks good based on the data that we've got and email that to you guys. You can either say, ""Yeah I like that,"" or ""No, I don't like that, go back, dummy and go try it again,"" and we'll try it again.",-1,proposing next steps and feedback process
+"Yeah, sounds good.",21,acknowledging agreement
+"Jim, did you say you had two items on your list?",43,asking for confirmation
+"Ken, are you OK with that? DJ.",8,requesting confirmation
+"Yeah. That sounds like a good solution, short term, to me.",21,expressing agreement
+"I know it was a real current thing, just recently an email about the ship via for pseudos. I don't know what I had said.",23,expressing uncertainty
+"It was quite a while ago, and to be honest, it could have been you that said it or somebody else. Neither here nor there. That's the next barrier I'm coming across, is I need to know whether or not the G team's ship-to code is indeed a valid ship-to code for those locations that are in the extract. If they are, I'll need those addresses. I really just don't know where to find them, if they are in the extract or not.",13,requesting information about data validity and addresses
+"54] If they're not, I need to strip those out, but we'd also need to know whether we can or can't ship a plug to one of those particular locations, and if something needs to go there, where it needs to be shipped to, via, to get there.",46,clarifying shipping requirements and constraints
+"24] I hesitate to pull NetLogic out, because it seems to me like it'd be a mess if it got into LCAM without a via location specified, and somebody tried to ship something directly to someplace in the middle of nowhere.",30,expressing concern about code integration
+"46] That seems like that would be a worse problem to clean up than the alternative, but I can do whatever you guys feel is the better of the two evils. If we can't get the ship-to's in time, that is. I know you're relying on somebody else to get us that information, I just...",46,expressing concern about data availability and cleanup options
+"I've got a call in to [indecipherable] . I guess I can call again. Everybody's busy who's on call. So Ken, if we didn't have a ship-to via on some of these, I think you're going to be...I don't even know what we would ship to those pseudos.",9,expressing uncertainty about shipping details
+"We probably aren't shipping to them, but I'm not sure all the intricacies between [indecipherable] and G teams, and how G teams was handling that. I haven't looked at the G teams data, either. Brian, have you been looking at the G teams data?",-1,expressing uncertainty about project details
+"I don't know where to find it, to be honest.",67,expressing confusion
+OK. [laughs],0,noise
+"I saw the reference to it, and I'm not seeing any foreign key constraints to another table from the ice locations table, but I haven't looked...",44,reporting a database schema observation
+"Most of these didn't have constraints, I think. I think they had interfaces built between separate databases. ",-1,providing technical insight
+"DJ, should I do some digging into G teams?",-1,requesting task assignment
+"Let me ask somebody over at the Verizon land the question. That way, you don't have to waste your time if I can get some information.",20,seeking information from a third party
+That would be of help. Thank you.,21,expressing gratitude
+You're very welcome.,10,expressing gratitude
+"So, is the option on the via ship-to...Can that also just have a filler that would prompt others to react to it?",23,requesting feature clarification
+Can we just put a pseudo-pseudo...,23,requesting clarification
+Pseudo-pseudo.,23,noise
+13] [laughter],0,noise
+"I'm starting to feel out of conception here, but a pseudo-pseudo CLLI, that we put as the via location for all of the ones that have a via location, and that can be the place holder, then go, ""Oh, I need to figure out where to ship this to,"" and we could have that as a dummy address, maybe? I don't know what that would look like, but, something.",13,expressing confusion and proposing a placeholder solution
+Would they all be the same? Pseudo-pseudo?,23,asking for clarification
+"Yeah. Every G team ship code that we have, we would just map it to alpha.",-1,explaining deployment strategy
+Ship unknown or something like that. Load base alpha [indecipherable] .,-1,noise
+"Yeah, we can try that, Jim.",16,agreeing to try a suggestion
+"What do you think, Ken? DJ?",8,requesting opinion
+16] [crosstalk],0,noise
+We can't find any real data that would at least get the records transferred in without fallout.,-1,reporting a data issue
+"That'd be good, as long as there's something there and we know we've got to go back to it. [indecipherable] target. What we have for [indecipherable] logistics is [indecipherable] ship to [indecipherable] .",18,noise
+"Yeah. They should have those, right?",58,expressing agreement
+"Yeah. I need to get back with them. I haven't sent any replies. Plus, he didn't call me back.",48,providing status update on communication
+"That did bring me to another question. I can't find warehouses in the data at all, and I know that, Ken, we got feedback from you to look at the building type field that's there, and that was beneficial. We found the field locations, and may denote it as CS, which I assume is Central Stock. RDC Remote Distribution Center, and then I think an IDC is an Intermediate Distribution Center.",44,asking for clarification on data fields
+"30] The CSs, the HCSs, and I think the RDPs even, RDCs, and net we treated as forward stocking locations, and we had a static list of CLLIs that we knew to be warehouses. But I don't have a static list or anything like that for the Verizon ones.",45,explaining current data handling approach
+"58] I looked at non-working to working plug ratios, and I noticed that the central stock ones, or the building type designating them as central stock locations, had pretty much zero percent working plugs, which sounded to me like it could be either a warehouse or a forward stocking location.",44,reporting an observation from data analysis
+"29] But their FRCs were like 357C, so that didn't sound like a warehouse to me. I did find...",44,providing technical observation
+37] [crosstalk],0,noise
+"Go ahead, I'm sorry.",12,expressing apology
+"Well I know...To cut in there, I just found out not too long ago that Verizon changed their policy on reuse items. They are leaving the capital account. I just wanted to let you know that those 357Cs, that was reused stuff. [indecipherable] .",60,providing project update about policy change
+"I did find several locations that seemed to be where the primary account was, a 12, 20, 6, 10, which is the new, right? One of them was the RDC, which was in there, which looked like it was grapevine...Something like that.",44,providing update on investigation
+"27] But, there were also several other references to assets to locations that seemed to be where the primary account was 12, 20, 6, 10, and those locations didn't exist in the ice locations table. It almost sounds like those could be warehouses, but they didn't exist in the warehouse table.",44,reporting a data inconsistency issue
+"All right. Let me... [indecipherable] a Verizon call, and I don't know if I have all the emails that he had requested, all the special warehouses. Let me see if I can find that. Grapevine, and [indecipherable] , and there were a couple others. I think that...",9,expressing uncertainty about information availability
+"I've monopolized the time [indecipherable] , but I think that's pretty much all I had.",-1,wrapping up update
+32] [pause],0,noise
+"We don't have to go into detail on this, but [indecipherable] said to try to work those shipments, and I don't know if you saw the email. Today at 11:00 AM Eastern Time. Would have been 10, 11. Go into it now, [indecipherable] .",9,expressing uncertainty
+What is the problem of the shipment? What exactly was in the email? I can probably find it...,9,requesting clarification
+The shipment of...,46,noise
+19] [crosstalk],0,noise
+Is this the one about the projects?,43,seeking clarification
+You're cutting out. Or I am.,-1,noise
+Sorry.,4,expressing apology
+"No, go ahead. You were cutting out, I couldn't hear.",-1,requesting clarification
+Is this the one about the projects being wrong on the shipments?,24,asking for clarification
+Yeah.,1,expressing emotion
+"We were just looking at that before we got on the call with you guys, so I should be able to give you an update tomorrow once we finish looking at it.",11,promising an update tomorrow
+Thanks.,10,expressing gratitude
+Sure. Is there anything else?,11,requesting additional input
+47] [pause],0,noise
+"No, not here.",53,noise
+No.,1,noise
+"All right. Thanks, everybody. We'll talk to you guys later.",10,closing the meeting
+Thank you. Bye.,10,closing the conversation
+DJ seems peppy.,8,expressing emotion
+"Is it her Friday, too?",22,asking about schedule alignment
+07] [laughter],0,noise
+...or that is doesn't allow remote connections -- which I has up until now -- or that it can't connect to the server. What the heck?,20,expressing confusion
+[0:09] This computer may not have connectivity.,20,reporting a technical issue
+[0:20] . Susan? Anyone want to put board up?,25,requesting action
+I can't get connected to my computer to get the board up.,-1,reporting a technical issue
+You can Google. You can Google.,-1,noise
+"Well, my board's up.",25,reporting status update
+"OK, well, call them out. What do they got [laughs] ?",58,requesting information
+I'm inside updated [indecipherable 00:40] inventory search.,28,working on a task
+"Still working on that, Adam?",-1,inquiring about task progress
+I've worked on it a tiny bit yesterday.,51,reporting progress
+Most of you time was spent on...,60,expressing confusion
+"Other things, and including the remote. I had received messages are now coming in from [indecipherable 00:57] ...So, I had a bunch of those. This is [indecipherable 01:02] screen. I got it down, from 203, I got it down to 60, that they're going to have to look at.",9,providing progress update
+That's good. You got rid of the stuff that they need to be concerned about.,55,providing positive feedback
+"Just as long as there's [indecipherable 01:13] have to see [indecipherable 01:13] , we can give them an update on that this morning. They need to look at those 60 that are left, because they can't [indecipherable 01:20] FTR serial numbers. [indecipherable 01:24] .",9,noise
+24] [crosstalk],0,noise
+"Patrick, if you launch the [indecipherable 01:30] .",3,noise
+"before [indecipherable 01:33] follow it again, hours of testing [indecipherable 01:36] [1:30] .",3,noise
+40] [laughter],0,noise
+Can we get it on the Internet at all?,27,inquiring about deployment status
+"OK, Grady's got generate report data.",50,reporting task assignment
+"I'm still working on that. I've got to update [indecipherable 01:50] out, and couldn't touch TFS. I'll update LCAM.",-1,working on a task
+Who's next?,-1,requesting speaker turn
+"Kevin and Drake's got modify the retail notifications that handle non-sterilized equipment, and to modify received equipment that handle non-sterilized equipment.",-1,describing task requirements
+"In theory, [laughs] [indecipherable 02:17] this afternoon...",3,noise
+18] [crosstalk],0,noise
+"I know, what's this ""in theory"" crap?",-1,expressing frustration
+21] [laughter],0,noise
+"So, you're making progress, though.",51,acknowledging progress
+Reboot.,37,requesting system restart
+"I don't have anything right now [indecipherable 02:34] , and Patrick has got break out bay audit details into their own page and grid.",48,reporting current status
+I'm plugging away at that.,55,continuing current task
+"And add duplicate H [indecipherable 02:47] description for older, unprocessed [indecipherable 02:51] .",18,reporting a bug
+"Yeah, those are all bay audit screen updates. I'm shoveling through them at the moment.",54,working on a task
+03] [laughter],0,noise
+"I swear, that's weird. Shut that... [inaudible 03:07] that.",2,noise
+And new [indecipherable 03:10] update.,16,noise
+"And Brian doesn't have anything? [laughs] He's afraid to try and break his stuff apart into tasks. I don't think he has any tasks out there, so they wouldn't show up on the board. He's being a bad boy [laughs] .",17,commenting on colleague's task status
+And very silly.,66,expressing emotion
+He's usually my good one. The one that puts the tasks out there [laughs] [3:28] .,-1,expressing emotion
+"""Brian's not doing anything!""",17,reporting lack of progress
+35] [laughter],0,noise
+"Try it now, Susan.",25,requesting action
+Don't think I'm [indecipherable 03:41] .,2,noise
+"I did want to bring up, while we're here...I keep looking up there for the time since it's not up. We do have some issues that probably are going to require a release to be fixed, so I don't know who has time to look at those issues [laughs] .",11,reporting issues requiring release
+Take the keyboard away from her!,62,noise
+Apparently Brian does.,17,expressing agreement or confirmation
+Give them to Brian. He doesn't have a lot of work.,17,assigning task to colleague
+"[4:11] Yeah, it's all Brian. I sent that email out this morning. I don't know if you looked at it yet. You know that issue where I said it was weird on those ZFR's? There were two audit trail records that flipped it back. It's also doing it when they manually edit stuff on the edit assets screen.",24,providing status update
+Maybe I should have [indecipherable 04:39] these after all.,2,noise
+"That's a problem, because they're editing it, and they're changing values, and then we're going, ""Nope!"" And putting them right back.",31,describing a workflow issue
+"47] That, to me, is a show-stopper type of an issue, even though the value is not horribly, horribly important. It's like parent amount position and parent [indecipherable 04:56] . Is this reverting back to amount position in a [indecipherable 05:01] in another location? And there was something else.",31,reporting a critical issue
+08] [crosstalk],0,noise
+"Can I get rid of [indecipherable 05:10] ? So, I don't know. How do you all want to handle the things that are out there now that really need to be fixed? Because they don't have workarounds for them.",18,requesting guidance on handling existing issues
+Fix them?,54,requesting confirmation on fixing an issue
+33] [crosstalk],0,noise
+"Who's going to do the fixing and not do their one [indecipherable 05.37] stuff, is my question?",54,requesting clarification on task responsibility
+[5:44] .,3,noise
+[5:45] your desktop.,25,noise
+I didn't do anything on my desktop.,-1,reporting no progress
+49] [crosstalk],0,noise
+...your desktop. Internet Explorer...,63,noise
+Tuesday. It does its normal reboot during the week. Is it Wednesday morning you come in [indecipherable 05:58] ?,22,providing status update
+58] [crosstalk],0,noise
+Call [indecipherable 06:05] . That's what I do.,3,noise
+"I don't need to go to TBS now, I'm just going to go and pull up those emails that have those issues that we need to decide.",65,reviewing issues for decision-making
+Mailed all those [indecipherable 06:18] .com.,9,noise
+"Only three minutes, it's not worth it [laughs] .",26,expressing emotion
+Do you have the master [indecipherable 06:26] for Frontier on the share site?,39,requesting information about file availability
+"It's not on the share site, right now, because I've been trying to get it updated, so, it's just on our local machine. I'll copy it out there and tell you where it is. I'm going to send it out when I get through it, if I can ever flipping get through with it, if they will quit sending emails.",27,explaining current status and next steps
+"49] Actually, I'm cutting it off at this morning and trying to get the rest of them in there.",46,progress update
+"Didn't you say [indecipherable 06:55] add it, it's 82, it's 85?",3,noise
+Yep. [laughs] What can I say?,0,expressing emotion
+My God.,66,expressing emotion
+"Frontier would like that list too, but I'm like, being selfish and holding it all to myself.",43,expressing humor about information sharing
+"What is the saying? People don't know what's going on, they freak out. People know that they're going to die at a certain time they're OK.",-1,expressing opinion
+20] [laughter],0,noise
+Right! What is that phrase?,-1,expressing confusion
+I know all kind of phrases. I think you just made that up.,66,expressing doubt
+You've never heard that phrase?,-1,expressing confusion
+No.,1,noise
+36] [crosstalk],0,noise
+"That's true, I mean it's like the chaos. If people don't understand that there's chaos, they freak out. If people understand that it's chaos, and it's organized chaos, they're OK with it.",-1,expressing opinion about project state
+I believe that.,35,expressing agreement
+53] [crosstalk],0,noise
+Are you saying me sending out the list is that we make it organized chaos?,-1,seeking clarification
+That's perfect. I know my issue has been recognized.,32,acknowledging issue recognition
+"Well, that's what I was trying to give them. It's like, I'm not ignoring these. I've got them on the list. Some of them I've got on the list because we still need to research them, because I don't know if they're an issue or not, or it's just something that they did wrong, then I need to tell them here's the correct way to do that.",32,explaining task status and next steps
+21] [crosstalk],0,noise
+I dare you one day to just kind of add a fourth digit to it.,-1,suggesting a feature enhancement
+1268 [laughs] .,0,expressing emotion
+[8:32] frame.,25,noise
+I was going to say like a million [indecipherable 08:34] 73 years old.,-1,noise
+"Even worse, really high. See if anybody notices. I might do that, now that you said that [laughs] . Whenever I get to the 90s, instead of it being issue number 90 it will be like 92. [laughs] Or something.",46,expressing a plan to manipulate issue numbering
+53] [crosstalk],0,noise
+700,-1,noise
+56] [laughter],0,noise
+Just start going backwards. This is issue number two on the list or make it three.,32,planning task order
+"In one of them I sent out, I don't remember if I left it or not, but I had put on there, that the issue number does not indicate priority, [chuckles] because it doesn't. When I say it's issue number 88, that doesn't mean anything except that I have it on this list.",32,clarifying issue numbering meaning
+"When [indecipherable 09:24] will see that list to Jim and he'll go, ""Um, well, uh, [indecipherable 09:30] 90 or?""",3,noise
+30] [crosstalk],0,noise
+31] [laughter],0,noise
+"Welcome to the dark side, Kevin. ",-1,expressing emotion
+"Hold on, Jim's calling into the meeting here.",7,indicating interruption
+42] [crosstalk],0,noise
+I'm going to hang up on you and call in to the call.,14,informing about call reconnection
+"OK, be nice to Jim.",16,expressing a social reminder
+52] [laughter],0,noise
+He's throwing me under the bus now.,19,expressing emotion
+You too.,10,noise
+Bye.,10,noise
+Bye.,10,expressing emotion
+The three of us we're over to where we were.,60,unclear statement
+05] [crosstalk],0,noise
+"I don't have any, Grady.",19,no issues to report
+"I wouldn't let you back, I'd [indecipherable 10:11] if you did.",16,noise
+12] [crosstalk],0,noise
+It's been too hot today for a sweater.,-1,expressing emotion
+"Hi, who's on the call?",14,inquiring participant identity
+Jim's on.,7,noise
+Kathy Deacon.,55,noise
+Cindy [indecipherable 10:30] .,-1,noise
+34] [crosstalk],0,noise
+Do we have anything?,11,requesting status update
+Just a quick update on...,-1,providing a status update
+"Hi, who just joined?",7,greeting and checking attendance
+It's Kevin.,17,introducing oneself
+"Hey, Kevin. Yesterday Shield started sending receive equipment, notifications back to LCAM. Adam was looking at that. There are about 60, that were in the SEC stream, that we need you all to look at because they came across and got an SEC error.",20,reporting an issue with data stream errors
+"The only error that's showing up right now is the [indecipherable 11:15] Not Found, so we need to track down exactly...",3,reporting a bug
+"20] Some of that may be fallout, some of it may not. I've spot-checked several other and they weren't fallout so far, so there's this new [indecipherable 11:27] to us. We need to figure out where that equipment's coming from or that [indecipherable 11:32] , may just be something we didn't have previously.",9,investigating issue sources
+"It was not fallout, and it was not in the CL model. I know I spot-checked one yesterday. It was truly a [indecipherable 11:48] that we didn't receive from you all to import, and it didn't fallout, because we never received it. I don't know if they're all bad, but...",68,clarifying issue with missing data
+"We'll check them. I'm not going to say this is the problem, but there's a barcode, that Nortel that we've always accepted, the 12th of character NNTM. There must have been a new person at the warehouse.",54,speculating on potential issue
+"15] They've replaced them with the new FTR one. I don't know if that's it. It's happened before, that they hire somebody new, they don't have the [indecipherable 12:28] receive [indecipherable 12:29] .",9,reporting an issue with new personnel integration
+29] [laughter],0,noise
+Most of them are FTR-type hands,-1,providing task status update
+"That might be one reason, but we'll give you the official answer after we check.",40,promising to verify information
+So far we've received about 203 Received Equipment and 60 of them fell out with Did Not [indecipherable 12:49] at this point.,46,reporting progress on received equipment
+That was the only update we had for you all this morning. Do you all have anything for us?,11,requesting updates from others
+57] [pause],0,noise
+"We're working on...Last night we were talking about the ship via CLLI codes, that starts with SA-type T [indecipherable 13:14] , the dimension was 500 some.",-1,providing project update
+"21] We're working, [indecipherable 13:22] to see what would be a report that would be good for us to go through. We'll get that figured. ",3,planning data report
+"Kim wanted to talk about those fallouts, try to do it as a group, so we're not having any conflicts. We can work definitely on that. I don't have anything else.",55,proposing group discussion to resolve conflicts
+Anybody else have anything?,11,requesting additional input
+"Susan, I sent you an email and got you [indecipherable 14:15] call.",3,notifying about email and call attempt
+"I probably haven't seen it. I have problems logging into my computer from the conference room this morning. If you sent it in the last 30 minutes, then I haven't seen it yet.",56,reporting an access issue
+"I've got it, DJ. We don't have anything else, so wait for the other caller to go over it now.",8,waiting for input from another participant
+Is Drake with us?,28,inquiring about participant presence
+"Are you asking if Drake is here? Yes, he's here.",28,providing information
+OK. We wanted to talk about two changes that were made to CTDI interface.,5,initiating discussion about changes
+Do we need to be here?,60,questioning meeting necessity
+You don't have to stay.,67,giving permission to leave
+We had some questions. We're trying to understand...Let me just pull it up.,61,expressing uncertainty and preparing to clarify
+Can you see if Daryl is available?,-1,requesting availability check
+"I don't have it on hand, but I can get started. Drake, we were on that call with Mike [indecipherable 15:25] . Remember, he had that flowchart of the interfaces between Infinium and CTDI, and LCAM and CTDI. You had identified two features or code changes that were outside the scope of the project. One of them was, where a part number and/or VIN changes.",20,referencing previous discussion and project scope
+Yep.,1,noise
+The other one was the nightly snapshots to check that we're all in sync.,59,reporting progress on synchronization tasks
+Yes.,1,expressing agreement
+"Correct? OK. The first one...I took notes, plus I double-checked the CTDI. We were under the impression, for those MRs, the finance issues and whatever the MR, that those could be worked through the existing code of send and receive. I was a little confused why that would be outside the scope.",45,expressing confusion
+"26] Then the second one -- I thought, my notes were -- that LCAM agreed to just send a file [indecipherable 16:37] , like on an FTP server each night. Is that true?",9,asking for confirmation
+"We hadn't decided. It could either be a service or a file, depending upon the size of that file, how much data...",20,discussing implementation options
+"Were you sending it to them, or they were sending it to you?",27,requesting clarification
+"No, we were creating, depending on which way we were doing it. If we create a service, they would pull it whenever they wanted. If it was an FTP, then we would send it to them or put it on the FTP site, daily or however often it was run.",54,explaining data delivery methods
+"To tackle the first one, first. You're saying that Mike suggested to use existing interfaces, is not appropriate or what...",31,seeking clarification
+The existing interface doesn't change part numbers now. We would either have to change the existing interface to make it change part numbers -- which is not what the interface is designed for -- or we create a new interface to allow them to change part numbers. That's all they're doing with it.,15,explaining design options for interface modification
+"59] Either way, it'll be a change for us. It is not like we could just allow them to send it to the existing interface and it'll change the part with what they want.",15,explaining a technical constraint
+Wasn't that a two part thing? One with...,49,expressing uncertainty
+"Yeah, part or a serial number. VIN number.",68,providing clarification
+"OK, but short of changing the part number, I thought the MR, the old part number would go out and the new one would come in.",54,clarifying a process or behavior
+"Yeah, that's...",47,noise
+Would that really...?,-1,expressing confusion
+We seem to have one that's still bringing back in...,60,reporting a bug
+"We're just trying to make sure, before we accept the digital feed that.",-1,clarifying requirements
+We still wouldn't change that.,34,expressing status quo maintenance
+We might need an expert. We're a little confused.,61,expressing emotion
+"Their proposal was to send it out as one part number and then we would send another message, have it coming back in as a different part number. Still, the code doesn't change the part number when it comes in, it [indecipherable 19:03] that VIN and moves that VIN where it needs to be. It doesn't change the base equipment on that, that VIN.",9,explaining current system behavior
+[19:13] It wouldn't be treated like take the old one out and replace it with the new one?,63,asking for clarification on process
+"No. Basically it would [indecipherable 19:25] no change, the way they're saying to do it now. So like I said, it's either change that interface, or create a new interface.",3,discussing interface changes
+A new interface is safer. It's a safer way to do it.,15,explaining a design decision
+"Yeah, because I don't think you want to change the part every time you get something in, because we wouldn't have any idea whether this was a part change or it's just receiving something in.",31,expressing concern about process changes
+I've got to see. Mike was thinking that those would be treated as two separate records. ,31,discussing data handling approach
+"I hear what you're saying. We have a whole record leaving and a whole record coming in. To me, it would be changing the VIN.",-1,providing technical clarification
+But you have to find it.,67,requesting action
+[20:23],3,noise
+"The other one, [indecipherable 20:30] would it be something we could do? Just run a query and let them pick it up? Isn't that all you're doing?",3,asking for clarification about a task
+Yeah.,1,noise
+Have your part number and quantity. I just don't know why that would be such a significant code issue.,32,requesting information
+49] [crosstalk],0,noise
+We said it was three points.,60,confirming task estimation
+The whole thing?,52,seeking clarification
+No. Three points for each of them.,-1,expressing information
+ Don't look at me like that. I didn't make the query.,50,deflecting responsibility
+I didn't make it either. I didn't make the query.,50,reporting incomplete work
+[21:00] until now.,54,noise
+"You can write, if you want to. Have Kim or Edward or someone write that query to do it, that's possible. Otherwise, like I said we create another service [indecipherable 21:22] or just sent it through with ITP.",-1,suggesting task delegation
+"DJ, do we have enough for now? I guess I don't...",8,expressing uncertainty
+Because we're not just pulling a query...,50,explaining a process
+37] [crosstalk],0,noise
+...with what we do.,34,noise
+"On the second one, I think we talked about, you wouldn't want an audited adjustment anyway, right?",31,seeking confirmation
+54] Jim. Right.,0,noise
+We want [indecipherable 21:58] .,3,noise
+"But second, yes, there is a discrepancy. We were going to keep that manual anyway, correct? I think even Mike agreed.",31,confirming agreement on documentation approach
+"That's our understanding right now, is that it would just be a...It's just a way of being right and doing corrections at this point. That would be manual.",31,explaining current understanding
+15] [pause],0,noise
+"All right. I guess, DJ, we have enough to review our options and get back with them.",8,planning next steps
+39] [pause],0,noise
+"48] So, just out of curiosity, Adam and Drake. Why was this outside the scope of the interface? We just didn't clarify it up front?",15,requesting clarification about scope
+It was never asked for up front.,-1,clarifying requirements
+First time we heard of it was last week.,22,providing background information
+Last week was the first we heard of it. We never anticipated it or coded for it.,33,reporting unexpected issue
+07] [pause],0,noise
+"In snapshot? It's not a bad idea. It's a good idea. It's just that like I said, we did not anticipate it.",24,expressing opinion
+"All of this stuff takes time, and time is running short. We'd anticipated this much work to do, and then we get six more days worth of work tacked on to it, and we have to be done by next Friday.",33,expressing concern about timeline
+I got it.,41,acknowledging completion
+"So, [indecipherable 23:55] we will discuss it and let him know.",3,noise
+"OK, thanks. We'll talk to you guys later.",11,closing the conversation
+Bye.,10,expressing farewell
+Bye.,10,expressing farewell
+Where's Susan?,25,inquiring about team member location
+I'm here. I am desperately trying to get the board to show up.,25,expressing progress difficulty
+She's too busy to push the button to answer the phone. Patrick had to do it. He was closest to the phone.,62,describing a situation
+I'm sorry. Deal with it. I haven't even written down what day of the week it is yet.,22,expressing emotion
+It's Friday.,22,expressing context
+It's Friday.,22,expressing emotion
+26] [crosstalk],0,noise
+I have to write this crap down because I have to have all my notes. Grady is done with all of his stuff.,19,"expressing intent to document progress  
+reporting task completion"
+I've got a first [indecipherable] . Tested it the best I can.,2,reporting progress
+Have you deployed it?,65,requesting deployment
+"No, that's what 1.1 is doing.",54,clarifying functionality
+He's got to test it!,41,planning to test
+"OK, well I haven't deployed 1.1 yet.",40,reporting deployment status
+You did. Last week. We tested some of it.,33,reporting progress on testing
+Yeah but this is not that 1.1. I'll do 1.1 in a bit. A 1.1 build later today. I'll deploy it for you.,40,planning deployment
+What else will we [inaudible] ?,2,noise
+Do we need to...?,11,asking a question
+Nothing from me.,52,no update to report
+Nothing from me. [laughs],0,expressing no update
+[indecipherable] merge back.,2,noise
+13] [crosstalk],0,noise
+Should already be indexed. I'll build that from [inaudible] second merge is done.,-1,planning task execution
+So you don't have any updates on these because you spent the whole day doing other practice for the area. Are going to get finished before next Friday?,22,requesting status update
+Dang right I will.,58,expressing agreement
+[laughs] Is it going to be right?,36,expressing emotion
+Of course.,12,acknowledging agreement
+It'll compile well. That's really all we need. It compiles. Adam. So you know how this one's...So you need to...,33,confirming successful compilation
+Yeah.,1,noise
+"You'll add a task on that one. Who thinks he can get this done? For one thing, because, like I told him, I don't care if the tester gets updated because it needs to be tested with CTDI next week anyway.",5,assigning a task
+"32] So if you can just get it done and then test with them and fix anything, then update the tester after the fact so that somebody can actually test against it, we could get away with that this time if we can get it in.",15,requesting task completion and testing updates
+"46] I mean, I would rather it be in 1.1 just so we'll be done done with everything related to that interface and not have it hanging over us.",15,expressing preference on version release timing
+"Yeah, that'll knock some time off. Not having to update the tester.",5,explaining time-saving benefit
+"Yeah, as long as the tester gets updated like the week after or two weeks after so that it's available for when we need to do tests on the interface, because he's also off that week that you're off. That's why I'm like, stuff's got to be done. It's got to be right because you all are off, which is allowed. Just got to be done.",5,emphasizing task completion before team absence
+"With your permission, right?",-1,requesting permission
+As long as your stuff is done and it's right.,51,confirming task completion and correctness
+Of course.,12,noise
+Mamma has spoken.,67,noise
+"Yeah. Well, that's life.",47,expressing emotion
+I could finish that story up if I could just...,26,expressing intention to complete a task
+If you could ever get two hours.,26,expressing a time constraint
+"If I could get an hour and a half, two hours together. I could finish that one. I'll finish today.",26,estimating time to complete a task
+"OK. That'll be good. If he's going to finish this one today, it would actually be good to wait until Monday to get our next release because then we'll have the reports that we can test and this serialized change on the UI.",15,planning release timing
+Now you've put the pressure on me. Now I can't do it.,67,expressing emotion
+11] [laughter],0,noise
+build until next week.,33,planning future work
+I'm just kidding. It's OK.,53,expressing emotion
+We're going to be building 1.1 next week because we're going to have to because it has to be done next week so some of this stuff has to be being tested. ,5,planning upcoming work
+"If he can get this finished today and you all get everything merged back then you can make the build today but I would say let's wait on this because otherwise, the only thing we have is that report to test.",24,planning deployment timing
+40] The other report was available the last time you built for me. I just haven't tested it yet.,40,providing status update
+[inaudible] .,2,noise
+That's all you've got. Yeah. Grady and Drake and Patrick.,62,noise
+"Still chipping away at it. Get the details on a separate page. On a search page, you jump already to the second page, about to add all the old value, new value stuff. Chipping away at it. Didn't get all that done yesterday. Other questions and stuff.",31,providing progress update
+"When do you realistically think it might be something that you can release to us for testing? Like, next Wednesday ish or going to be later? If it's later, then it's later.",5,inquiring about release timeline
+"Yeah, hopefully.",47,expressing hope
+"Hopefully by Wednesday. I mean, it shouldn't take us that long to test. I put something like four hours down, because we've got to [inaudible] the data and then we've to go in and play around with all the...",5,estimating testing time
+"I can knock out a good chunk of it today. There will be a good first look there. I'd hope you'd have something functional Wednesday, even if it's still rough.",33,providing progress update
+That sounds good. You all want to look at mine just so you all can laugh how I haven't done anything?,-1,expressing humor about lack of progress
+17] [crosstalk],0,noise
+"There it is. All of this has my name on it. Let's see what Kevin [inaudible] . Yeah, he's supposed to test that and...",48,assigning testing responsibility
+The only thing I got is the CTDI stuff.,68,reporting task progress
+"Yeah, which you can't do anything on right now.",-1,expressing limitation
+"Which I can't do, yeah. And remove the header. That's the new...has nothing needed, right?",63,expressing limitation
+"Yeah, it's not ready yet either. That's the one Adam said if he could get two hours, he could get it done today.",26,providing status update
+I've got the other two done.,49,reporting task completion
+Do we have anything that we need to talk to them about today? No? That's good. Today is what? 3/18. Friday.,11,inquiring about discussion topics
+What's the deal on the projects for the shipments coming in? [inaudible] shipments.,46,requesting project status update
+It was because the projects table had duplicates. It had multiple blanket projects in it. It was a conversion issue.,43,explaining cause of a data issue
+So it's just getting the top one out of multiple matching...,-1,explaining current task
+Yeah.,1,noise
+I saw the email.,9,acknowledging information receipt
+"It should not be a problem and all of them are prior to 3.16 that have that and we fixed it one day this week. I'm assuming late on the 15th or on the 16th because they've gone places. I'm going to hang up and call into the call now, Kevin.",32,providing status update
+See you guys.,-1,closing the meeting
+All right. Bye.,10,closing the conversation
+Please enter the conference pin number.,56,noise
+13] [beeping],0,noise
+Is Grady going to do that?,19,inquiring about task assignment
+Yeah.,1,noise
+"Hey, it's Cathy Jenkins.",55,introducing oneself
+"Hey Cathy. Is anybody else on the call? Hi, who joined?",7,greeting and checking attendance
+"Hello, it's Kim.",7,greeting
+"Hey Kim. Hi, who joined? Hey Jim. Hi, who joined?",7,greeting
+Kevin.,17,noise
+"Hi DJ. Hey Kevin. I have Cathy Jenkins, Kim, Jim, DJ, Kevin. We don't have anything for you guys this morning. Do you all have anything for us?",17,"greeting and checking for updates  
+requesting updates"
+I do not.,39,expressing lack of knowledge or information
+I do not.,39,expressing lack of knowledge or information
+I do not.,39,expressing lack of information
+This is Kim. I do.,55,expressing affirmation
+25] [laughter],0,noise
+OK.,4,noise
+Violet and I are working through preparing to bring in some of the call-out data and we're seeing some inconsistencies in the data that's already in there. Do you want us to just document those and send them to you or is there another method we should be using?,-1,reporting data inconsistencies
+Just send it to us.,27,requesting delivery
+Yeah.,1,noise
+"For instance, yesterday, we found that on some assets, there's no status. The status field is blank.",-1,reporting a bug
+That's not good.,4,expressing emotion
+"I think there were not just one or two. There were 70 some. Anyway. Do you just want us to put that together and email? Our concern is, we don't want to start putting stuff in there and get it confused with maybe an issue that already exists. You understand what I mean?",45,clarifying task scope and concerns
+"Exactly, yeah. One way, just along those lines, that you can differentiate the stuff that you're inserting from the stuff that we inserted is to put something in the legacy ID field that tells you this is the stuff we did.",20,suggesting a method to differentiate data sources
+"02] That's kind of what we've used. We started using it because, for the Verizon assets, they wanted to keep up with the sequence number but then Brian was also using it to keep up with other data that he entered.",20,explaining usage rationale
+"19] If you look at the legacy ID field, he's had a pattern that he's used. He's actually out of the office today otherwise he could elaborate on that. It doesn't matter to us. We don't use that legacy ID field for anything.",20,providing information about a legacy field usage
+"36] It will have the sequence number in it for the Verizon data so that it can be tied back to the Infinium or whatever that sequence number was related to. As far as the code, the code doesn't look at that legacy ID for anything.",20,explaining data handling logic
+"We can do that. These irregularities, is that something you want us to, if we come across them, document and send to you?",54,requesting clarification on documentation process
+"Yeah. That would be great and I know Drake wrote a note down. As soon as we leave here, he's going to go and look at those assets that don't have a status on them. That's not good and not right.",28,acknowledging plan and assigning task
+That's what we thought when we saw it. We don't know all the ins and outs of BellCam. Thank you.,-1,expressing uncertainty about knowledge
+Was that it?,57,seeking confirmation
+That's it for me.,41,ending update
+Thanks everybody. We'll talk to you guys later.,11,closing the meeting
+Thank you.,10,expressing gratitude
+Bye bye.,10,noise
+That was good. Except for that.,55,expressing evaluation
+It was good. We have a [indecipherable] meeting. Just want to have it now.,-1,expressing status update
+How can we have everything in LCAM [inaudible 00:05] makes it not [inaudible 00:07] figure it out?,9,expressing confusion
+Please enter your conference...,56,noise
+18] [dialing sounds],0,noise
+Are you calling anyone?,14,inquiring about current activity
+Suze. She's probably in.,-1,expressing uncertainty about availability
+Hi. Who do we have on the call?,14,greeting and inquiry about participants
+Jim's on.,7,noise
+"Hey, Jim.",7,greeting
+Alden's here.,-1,noise
+"Alden North, I guess.",-1,noise
+Ken?,-1,noise
+Hey.,1,greeting
+39] [background sounds only],0,noise
+"What's up, ""Batman?""",-1,greeting
+Not much. How are you?,53,"expressing emotion
+expressing emotion"
+"Hi, who just joined?",7,greeting and inquiry about participants
+It's Kevin.,17,identifying oneself
+"Hey, Kevin.",8,greeting
+That's [indecipherable 00:57] this scanner.,3,noise
+00] [background sounds only],0,noise
+"Crickets, man, crickets.",-1,expressing emotion
+"Then, but tomorrow [indecipherable 01:30] .",3,noise
+"Get the whole team, except for Susan!",25,requesting team gathering
+37] [crosstalk],0,noise
+41] [laughter],0,noise
+Is it functional yet?,-1,inquiring about functionality
+Yeah. [indecipherable 01:45] on a call.,16,noise
+That was quick. Usually people take longer to dial in.,62,expressing observation
+01] [crosstalk],0,noise
+We just had to ask her. She was calling in to [indecipherable 02:04] .,16,noise
+"Oh, we both dialed in fairly early.",60,making a status update about attendance
+10] [crosstalk],0,noise
+I don't even know if anybody else is going to join.,-1,expressing uncertainty about attendance
+16] [laughter],0,noise
+[2:23] .,3,noise
+It is. Just looking at it's like...,47,expressing uncertainty
+"Larry, are you on?",8,checking participant presence
+Larry [indecipherable 02:31] .,8,noise
+How do we put the phone in [indecipherable 02:36] recall?,62,requesting technical guidance
+I don't want that.,55,expressing refusal
+"Called up. They could hear me. I couldn't hear anybody. So, they might be talking to us.",14,reporting communication issue
+50] [laughter],0,noise
+"Hi, who joined?",7,inquiring participant presence
+"Hi, it's DJ.",8,greeting
+"Hey, it's Larry. Larry.",8,greeting
+"Hey DJ, hey Larry.",8,noise
+What's with Larry Larry?,8,expressing confusion
+"I'm actually not at the office right now. Guys, do we have anything that we need to update them on?",11,inquiring about updates needed
+"I guess they can get a quick update on email that they just sent regarding the received equipment from [indecipherable 03:24] . I've updated the ones that still have WMS as the bin. Those either came in while I was [indecipherable 03:33] on the 17th, or immediately after, so I've corrected those last few.",9,providing status update
+"39] Everything that's come in since has come in with the correct bin, so that issue has been addressed.",15,reporting issue resolution
+"45] There's two other items on there that I'm still looking into, and we'll get back to you guys as soon as we can. Regarding the [indecipherable 03:55] that seems to be occurring, and the part number. The batches and the part number.",9,investigating issues and promising follow-up
+"Hey, Jim, were you able to get any response from Ron at [indecipherable 04:10] ?",16,inquiring about communication status
+"Actually, I dropped the ball there. I was on another project, so I didn't get him. It's on my to-do list. I've worked with Brenda, just didn't give her [indecipherable 04:37] because she sent me something else, an email. She pulled a report from another screen, gave the details on [indecipherable 04:47] .",48,providing status update
+"Yeah, we just don't know if they're even trying to send anything for new equipment across the interface.",15,expressing uncertainty about data transmission
+"Right. Get that solved. It was on the...I think he knew he was supposed to, right?",31,confirming task responsibility
+I think he knew he's supposed to. [laughs] Yeah.,59,expressing emotion
+"Yeah. He is aware, and I've been checking with him since Wednesday. I just haven't got a response back from him, especially on the new equipment. So, I'm just hoping to get some kind of feedback from him.",59,waiting for feedback
+I'll be calling him.,14,stating an action plan
+"So, that's the only update we have for you guys. Do you all have anything you want to talk about?",11,"providing an update  
+inviting input or questions"
+You mean...,47,expressing confusion
+Yeah.,1,noise
+49] [crosstalk],0,noise
+"No, I don't think so.",35,expressing disagreement
+[5:56] .,16,noise
+57] [background sounds only],0,noise
+"He's trying to slack off, guys.",-1,expressing emotion
+Can you think of anything else?,52,requesting input
+"I'm sorry, go ahead.",10,noise
+"No, I was going to ask you first. Larry and I had a few things, but I felt like you were...",39,seeking clarification
+11] [crosstalk],0,noise
+SQL could be [indecipherable 06:16] . Commands can go back and forth a lot.,50,noise
+"Larry and I tried to [indecipherable 06:25] up to your [indecipherable 06:27] . There have been critical ones in your world, so we [indecipherable 06:32] yesterday. Look at our active logs.",16,reporting a bug
+28] [crosstalk],0,noise
+"...specific on the ones that are critical. We ought to start with those. Larry and I can start, and you can time [indecipherable 06:48] .",54,planning task prioritization
+"Yeah, that's fine.",4,agreement
+"Like [indecipherable 06:51] , I don't have email in front of me, but basically you've got a high level...Susan's team, I guess when they go in there to do the approval. Pretty much the status is already set, so they're restricted, and can't redo something.",9,explaining current system behavior
+"14] An example would be of, it's like a forward stocking, LCAM says it's out there, but then when we talk tech with [indecipherable 07:23] , the packet is not there, or some some situation that can't use that. They can't go back and change it to pick it up in stock.",9,reporting a technical issue
+Interesting.,66,expressing emotion
+"Stock [indecipherable 07:36] them for some reason, there's a glitch, and it really is there. They can't do anything with that line item. Do you understand that? I guess I don't know what we can do about it, but that's slowing down productivity of the approval process.",9,reporting a bug
+"This is Drake. You should be able to look. They should be able to go in and edit that line item, change the location from where their equipment is being sourced.",28,explaining feature functionality
+[8:06] .,16,noise
+"They can do that. I responded to Jimmy's email, I think just a few minutes ago. The problem there is that she's looking at [indecipherable 08:17] to see what's available. The specific item that she gave an example on is not available in LCAM because it's already sourced for other shipments.",9,providing status update
+"29] I think she's doing the right process, but she's not looking in LCAM to see why it's telling her that, that equipment isn't available when she looks on the shelf. At least I think that's what that screenshot was of.",9,analyzing issue cause
+46] I sent some screenshots and explained what I did. That might help.,46,providing progress update
+53] [crosstalk],0,noise
+Go ahead.,12,acknowledging and encouraging continuation
+Did you put everyone through [indecipherable 08:58] ?,16,noise
+I just sent it a few minutes ago. Let me see. I see...,27,providing status update
+01] [pause],0,noise
+"Actually, this is the one. This one I sent this morning.",-1,referencing previous communication
+18] [pause],0,noise
+"Mostly that was to Jimmy. I don't know if I [indecipherable 09:24] other one [indecipherable 09:26] . This one was from Linda. They were kind of describing the same thing. It has IM group on there. I don't know if you're part of that or not, Larry.",16,referencing previous communication
+"Don't worry. I'll forward it to Larry. I've got it. [indecipherable 09:46] , Thank you. [indecipherable 09:48] related [indecipherable 09:50] .",16,"acknowledging and delegating task
+expressing gratitude"
+"The other one is, it's related to the same situation, and maybe not. Let's say that [indecipherable 10:01] our [indecipherable 10:02] members ordered more [indecipherable 10:06] , and three of them are in stock, and one is not in stock.",-1,reporting a stock issue
+"12] Normally, what we've done in the past is, we would be able to split that order so you would be able to push through and process [indecipherable 10:18] available. Create [indecipherable 10:21] a different order for the one that was not in stock. You would put in for that order's status.",9,explaining past process for order splitting
+"30] Whether they can or they can't do that, or if it's not possible, they have to be able to figure out how to do that. [indecipherable 10:36] is something that can be addressed, or...?",16,expressing uncertainty
+"Yes. Yeah, you can split orders on the line item. Drake, you can correct me if I get this wrong, but if the quantity is greater than one, then there is a wishbone icon. That means, ""Split this line item.""",-1,explaining a feature
+"59] You click that, and you can say split it off, and you can...",15,explaining a feature usage
+00] [crosstalk],0,noise
+Quantity...,46,noise
+[crosstalk],0,noise
+...orders are right...,46,noise
+"...with that one. Two, or one, or I don't really know...",49,expressing uncertainty
+[crosstalk],0,noise
+"...line item. For that [indecipherable 11:11] . And then you treat it however you want to, whether you want to source it from your location, or...",3,noise
+[crosstalk],0,noise
+The reason I'm bringing this up is because I wanted to see what your response was so I could explain it to him. [indecipherable 11:34] order approval [indecipherable 11:37] function...,9,seeking clarification
+[crosstalk],0,noise
+"That one, I would...",34,noise
+[11:43] let them understand it and do the work...,-1,encouraging understanding and action
+"Wait a minute. They can split the order, but their question is the approval process. They said that we can't approve them separately.",9,reporting an issue with approval process
+"In LCAM, you wouldn't approve them separately, because once you go in and say, for this line item I've vendor ordered it, you're done in LCAM. For those items that you vendor order, the next time LCAM's going to find out about them is when they're received in the fields from the vendor. That's when they'll get written on the LCAM.",9,explaining process in LCAM
+"I understand what you're saying. So if you had, again, four items, you wanted, again, to split off to send to the vendor, are the other three automatically approved and sent forward?",-1,seeking clarification on process
+"Once you approve the order. You have to, after you handle each of your detail line items, however you're going to handle, then you approve the whole order, and that's what [indecipherable 13:03] .",9,explaining a process for order approval
+", I don't have any experts on. Are they having to...If they approve [indecipherable 13:21] item to go [indecipherable 13:23] stock, or [indecipherable 13:25] , they approve it all, would there be a reason they couldn't approve [indecipherable 13:32]? We had that problem with [indecipherable 13:35] [13:15] departmental request...",9,noise
+[13:40] that's really not an LCAM issue.,9,clarifying issue scope
+"So even though they have it, they can't [indecipherable 13:55] because they have to wait for the part number available in the item [indecipherable 14:01] so they can approve.",9,explaining a dependency causing delay
+07] [crosstalk],0,noise
+"I think somebody had made a request. I don't know exactly what it was, but it was something like BMA will just put a status on the order other than approve, and I think [indecipherable 14:30] or waiting on [indecipherable 14:32] was what they were talking about.",9,reporting an unclear client request
+34] [pause],0,noise
+We'll take it back to them [indecipherable 14:43] look at the next one [indecipherable 14:45] more.,3,noise
+"He already covered the split, over here, and stuff we just talked about [indecipherable 14:55] if they can't change that source, I don't know what we're doing wrong.",54,expressing uncertainty about source changes
+"That one, I think, was a misunderstanding. Because she's trying to change it to [indecipherable 15:10] , because in [indecipherable 15:12] it says the equipment's available but in LCAM, it's already sourced that equipment for another shipment, so it's not available in LCAM. I really think that issue is just confusion over the fact that, that piece of equipment had already been sourced for other orders.",9,clarifying a misunderstanding
+37] [crosstalk],0,noise
+They've got something that...,41,noise
+46] [crosstalk],0,noise
+...it's wired. It will say quantity allocated [indecipherable 15:50] not showing allocated yet.,9,reporting a bug
+"That's what I think, because we've been only picking up like every 20 minutes or so.",-1,providing an observation about work frequency
+"All right, I'll take that back to them.",58,acknowledging and delegating task
+"And if that's not the case, then let me know. If we need to have a little WebX or something, and go through some of this...",21,offering to schedule a meeting for clarification
+That may be an excellent idea.,21,expressing agreement
+"If they come up with their scenarios, and we can do the WebX...",-1,discussing potential feature scenarios
+17] [crosstalk],0,noise
+"This situation, we can do this.",34,expressing confidence
+21] [crosstalk],0,noise
+"I think [indecipherable 16:24] to do that [indecipherable 16:25] decisions for that. I think there may be more to it, but I think some it is absolutely just confusion.",3,expressing confusion
+That's to be expected with a new system. It's different.,31,explaining system behavior
+In the first week. The first three times you do it.,-1,expressing progress milestone
+", that would be best. It doesn't matter when [indecipherable 16:47] [16:45] .",3,noise
+I don't [indecipherable 16:48] that.,2,noise
+Yeah. I can do that. It will probably be Wednesday before I can schedule it. I'm pretty booked up. I'll send some...,54,providing a timeline for scheduling
+[16:58] .,3,noise
+"Who all do you want? Or should I just send it to you two, and you all can send it to whoever?",27,clarifying communication recipients
+"You can just send it to [indecipherable 17:09] it doesn't matter, as long as it's [indecipherable 17:12] .",3,noise
+OK. All good.,4,expressing status update
+"Larry, Karen's concern with the ship via CLLIs, and then the CLLI code that [indecipherable 17:33] , we need them. We're working on reviewing that in-house first, OK?",6,discussing task progress
+Yeah. I got it. [indecipherable 17:41] .,3,noise
+"Yeah, I've done that. We're working on where that might be confusing. And the other item, I don't know if we've had it out there before, but the [indecipherable 17:57] group, and, well, both groups, I don't know if it's on anything, but CLLI code with the wild card...That's a big request.",3,providing status update
+I don't remember that one.,35,expressing uncertainty
+[18:14] .,3,noise
+Perfect.,66,noise
+"Clean it up, there.",52,requesting code cleanup
+"Guess it's not [indecipherable 18:18] I want to say. I think it is. There's so much on there, as [indecipherable 18:23]",2,noise
+"Right, and that's generally across any [indecipherable 18:29] search criteria. That'd be great.",50,noise
+"Ken, Is that mainly when you're trying to search for spares in a cluster location?",28,asking for clarification
+"I didn't get to read anything, but that would be one of the few reasons.",-1,expressing progress limitation
+"I believe one of the things that Drake is working on is an update to search inventory, so that they will be able to search cluster locations. Drake, am I saying that right?",28,confirming task details
+Yeah. The change that I'm going to make to this serialized inventory search will allow you to put in the floor stocking location. It'll find all of the assets that share that same floor stocking location and the asset center at that floor stocking location.,28,describing upcoming feature change
+Happy.,10,expressing emotion
+39] [background sounds only],0,noise
+Said it was [indecipherable 19:48] .,3,noise
+Gather up...,67,noise
+52] [crosstalk],0,noise
+"...Larry's team. Still confusion on the sub list, the ones with an area, the request put in for one part number, SE. LCAM doesn't see that available, but they know that they're the sub so they put in the sub. Then, for some reason that's not available. The item can't go put in another sub that they know is available.",-1,expressing confusion about task requirements
+On the order approval screen they'd be trying to change to SE for a line item.,31,describing a user action scenario
+Yes.,1,noise
+Drake? Can you see how substitution works in LCAM?,28,requesting clarification
+"Yeah. As long as it's a valid substitute, you should be able to edit that line item and change the SE, or you can split it, put in a substitute for that particular asset. It has to be in our table for substitutes.",-1,explaining a feature usage
+Why would you split it if it's [indecipherable 21:15] ?,3,expressing confusion
+We wouldn't unless it...,34,noise
+19] [crosstalk],0,noise
+You wouldn't unless you...,34,noise
+21] [background sound only],0,noise
+"Whenever they can't put that in, they need to let me know what it is, and we can check the sub table to see what's wrong. If it's valid we can update the sub table.",31,explaining troubleshooting process
+"Going to be a big one, but...",49,expressing anticipation
+44] [crosstalk],0,noise
+Suckers.,-1,noise
+"Larry, I guess that covers what we were talking about.",8,summarizing discussion completion
+"Yeah. Yes, sir.",1,acknowledging
+"Then for the IBT group that we were trying to target, most critical thing, what's coming up and biggest holdback is SCC scan error correction screen. First request, [indecipherable 22:16] , go to the active logs [indecipherable 22:19] . We're finding everything. Narrow those certain criteria. With project-related, OK.",54,reporting a blocker related to a feature
+"29] Otherwise they're struggling, fishing through the errors, and I think they're overwhelmed. First of all, we have a lot of errors. They usually have that cleaned up [laughs] .",46,expressing concern about errors and team overwhelm
+"42] We were talking about different things. There's not an Infinium company, probably that'd come into play. The CLLI code, not only a wild card. There's some code, I'm no expert, I put a underscore four times, a [indecipherable 23:05] , 08, then a percent. It'll know that the specific, fixed character was for 08. You know what I'm saying?",6,explaining code logic
+05] [crosstalk],0,noise
+Yes.,1,noise
+19] [crosstalk],0,noise
+I can do that.,21,agreeing to take a task
+"Have a general [indecipherable 23:24] target for their assigned areas [indecipherable 23:27] Indiana, Ohio, and [indecipherable 23:29] instead of fishing through [indecipherable 23:31] .",-1,noise
+33] [crosstalk],0,noise
+...on the list.,43,noise
+"If you have other ideas, just to generalize it, that'd be good. The target project, that's OK. That's there, but otherwise they struggle.",55,requesting feedback on ideas
+50] [crosstalk],0,noise
+You don't look at it. See what it is? It should be just be [indecipherable 23:56] .,3,expressing confusion
+56] [crosstalk],0,noise
+...I'm thinking Susan's already got that on the list.,25,referencing existing task ownership
+59] [crosstalk],0,noise
+"...that can be brought up before releases, and even without releases. Is there a reprocess feature overnight to take something [indecipherable 24:12] ?",54,inquiring about a feature
+"Grady, are you on the room?",17,checking participant presence
+"Yeah, I'm here. Reprocessing from the SCC page?",54,confirming presence and task context
+"No. He's talking about...Aren't you talking about whenever we release or whenever we want to, to try to reprocess everything that's in the SCC screen for you?",24,clarifying a process related to release and data reprocessing
+32] [crosstalk],0,noise
+"Yeah. I finished a script recently, was finishing up early this morning, to take all those and get them back to where they'll go through workflow again, reprocess so I can execute that procedure.",64,completed a script
+"Would you like us to run that overnight, Jim?",-1,offering to run a task overnight
+"Yeah, that would be helpful.",21,expressing agreement
+05] [crosstalk],0,noise
+I can.,12,affirming capability
+06] [crosstalk],0,noise
+Grady wasn't able to finish for Friday night's release. They were trying to [indecipherable 25:11] . He'll run that after about six pm central time today. That should get anything that would have changed in the release and that's still sitting in the FCC screen. That should at least get rid of any of that.,19,reporting delay in task completion
+33] [crosstalk],0,noise
+"...a canned query. I can't remember what the title was called, of the report. I'd have to [indecipherable 25:47] double check it. She was getting some random results and others were getting good results [indecipherable 25:56] query, sensitive to multi, people trying to use it at the same time. The point is that current results were impaired.",50,reporting a bug
+12] They got the same thing two or three times and got different results.,46,reporting inconsistent results
+Do you know which report she was running?,50,asking for information
+"I figured you'd ask that, so I'll get back with you on that.",21,promising to follow up
+23] [laughter],0,noise
+Thanks.,10,expressing gratitude
+It was on an email but I can't...,27,expressing uncertainty
+"I don't want to [indecipherable 26:30] , anyway.",3,noise
+"It'll take me a minute. If you could give me the date so I can open it up, that's fine. [inaudible 26:39] .",54,requesting information
+Those are the kind of issues that scare the crap out of me. I know they're trying to use it.,54,expressing concern
+47] [crosstalk],0,noise
+"...promotion screen, at the same time...",-1,noise
+0.999. [indecipherable 26:52] 91...,3,noise
+52] [crosstalk],0,noise
+...really not minor. I don't even know. I'm assuming that it's still open.,-1,expressing uncertainty about issue status
+57] [crosstalk],0,noise
+It is still open. You shouldn't...,54,expressing status
+Don't want it to get lost.,67,expressing concern
+It is [indecipherable 27:17] .,2,noise
+Why are they...?,-1,expressing confusion
+18] [crosstalk],0,noise
+One last thing.,52,expressing intention to add information
+They'll at least use a CPR code and...,-1,expressing uncertainty
+24] [crosstalk],0,noise
+"We're getting a lot of calls from the techs, and I've been trying to email. It was 3/11. I am sorry, folks.",9,providing status update
+39] [pause],0,noise
+"Sorry about that, [indecipherable 27:48] in my pocket.",3,noise
+51] [laughter],0,noise
+"I'm scanning transactions, email of March 11. It's not [indecipherable 27:58] . Reply [indecipherable 28:02] , so there's [indecipherable 28:02] question from Nicole and Peggy. They're working on [indecipherable 28:07]. [indecipherable 28:10] getting critical. You need me to forward that email again? You know what I'm talking about?",9,requesting confirmation to forward email
+"Yes. I haven't replied to it, and it's old, and I probably moved it. I know last week you and Ken were going to get together about what the roles would need to be for the month's scanning [indecipherable 28:37] . That determines what screens they can see. Still send me that email and I'll look at it and see if I can [indecipherable 28:48] it.",24,acknowledging pending task
+[28:49] . Thank you. That'll do it for now.,25,closing the update
+55] [background sounds only],0,noise
+05] [laughter],0,noise
+Get a high level [indecipherable 29:08] . Going to pick up a new Verizon 3 [indecipherable 29:14] ,20,noise
+"Larry, we've got to get that request for approval smoothed out, and get this scanning process correct the errors [indecipherable 29:26] down a little bit.",54,requesting process improvement
+Hopefully the WebX I'll set up for Wednesday will help.,33,planning a setup for a future date
+"Larry, do you have anything else?",8,requesting update
+"No, sir. I'm good.",53,expressing status
+"That's it for me, too.",55,ending update
+"Thanks, everybody. Hope you...",10,expressing gratitude
+Exactly.,1,expressing agreement
+It was 60 degrees in July.,-1,noise
+30 percent humidity.,-1,noise
+"If the humidity wasn't so high, it wouldn't be as bad. I don't think so.",-1,expressing emotion
+"We'll go ahead and get started. If [indecipherable] calls, he'd probably call me through the other terminal.",14,starting the meeting
+26] [laughter],0,noise
+"Have you done any testing with CTDI yet, right? ",5,inquiring about testing progress
+"Are you all ready to test with CTDI? He's trying. He's calling again. I'm going to try this another way, Brian.",5,preparing for testing
+OK.,4,noise
+47] [background sounds only],0,noise
+It keeps going back to you. Hold on. Hello?,37,noise
+Hello. I thought you all died or something.,60,expressing emotion
+54] [laughter],0,noise
+"No, now we're going to try...We didn't quite die. Now we're going to try...",51,expressing uncertainty about progress
+00] [crosstalk],0,noise
+Nuclear bomb.,52,noise
+01] [laughter],0,noise
+"So, Brian's on hold and I had [indecipherable] . If I hit conference now, and then go to Brian's, do you think it will work?",17,asking for technical advice
+07] [laughter],0,noise
+"Probably, it won't.",34,expressing uncertainty
+We'll try it and see.,34,expressing intention to test
+"You get them both on, we're going to have to call in to the other.",14,planning a meeting with others
+Nah. That doesn't work. Let me try something else.,21,trying an alternative approach
+OK.,4,noise
+"Wait, it keeps taking me back to you. Hold on.",58,expressing confusion
+"Do you see a ""Join"" button on there?",63,requesting confirmation
+I did. Let me go back.,39,clarifying or confirming previous action
+Did you hang up on Brian?,17,asking for confirmation
+"No, I have Brian. Brian can you hear me?",17,checking communication
+You still have me. I didn't hang up yet.,14,clarifying connection status
+OK. We still have [indecipherable] on hold. Hold on a second.,2,noise
+Just in time for [indecipherable] .,2,noise
+57] [laughter],0,noise
+"OK, who do I have on the call?",14,initiating the meeting
+You have Brian.,17,noise
+Yay! It worked.,37,expressing success
+"Now, remember how you did it next time.",39,giving a reminder
+Good luck with that.,21,expressing encouragement
+"I'll have to hang up to call the other people, then.",14,indicating a need to pause the conversation
+We have five minutes. We can do this in five minutes.,26,setting time constraint
+"I'm good. I'm doing clean up on back-taxes I have, here. I'm good.",53,providing status update
+Which one?,57,asking for clarification
+"Don't know, the [indecipherable] . I'm just doing a mix...Bulk coding complete. I'm just doing.",18,expressing uncertainty
+This one?,57,requesting clarification
+Yeah.,1,noise
+OK. You didn't finish it Friday? You didn't find your two hours?,26,inquiring about task completion
+"Couldn't find my two...Well, I got everything, the bulk of it done. I've got to make sure everything still works like it's supposed to.",-1,reporting progress
+"Once you're done with that, are you done with your stories, except for the testing?",29,inquiring about task completion status
+I think so.,35,expressing agreement
+"That's encouraging. Grady, you're done with all of your stories, right?",19,"expressing emotion
+asking for status update"
+"When you want another one, we'll build.",33,offering future work
+Whenever he gets done with this stuff. Drake? [laughs] [indecipherable] . Working on the warehouse interface for non-serialized assets?,28,inquiring about task status
+Yes.,1,expressing affirmation
+That has to be done before you all can do testing with CTDI.,5,stating a prerequisite for testing
+Sure enough.,12,expressing agreement
+When's that going to be done?,22,inquiring about task completion time
+Late Friday afternoon.,22,noise
+Late Friday afternoon. Not awesome.,22,expressing emotion
+22] [laughter],0,noise
+22] [crosstalk],0,noise
+In theory I could finish that today.,26,estimating task completion
+"That'd be good, because that's really the only thing that's holding up testing with CTDI. And we'll have a call with them tomorrow, at which time, hopefully we'll say we're ready to do testing, because seriously, I don't want to be doing testing next week when you all aren't here.",5,explaining dependency for testing progress
+"It still needs work, though. It's going to work, though.",-1,providing progress update
+[sarcastically] Sure. Like the last interface worked.,-1,expressing emotion
+It did! It worked.,37,expressing success
+"Eventually. I mean, your stuff worked to begin with, and then...",51,providing feedback on functionality
+00] [crosstalk],0,noise
+00] [laughter],0,noise
+"How's your stuff coming, Patrick?",46,requesting progress update
+"It's coming along. I got the second page, there. I'm getting all the old icons put on there, and after that is multi head, so, it's coming. It's got [indecipherable] , I think.",63,providing progress update
+Awesome.,1,expressing emotion
+"Brian, I don't have your name on here, so you never added any tasks for yours?",17,asking about task assignment
+No.,1,noise
+34] [laughter],0,noise
+He just didn't have anything to do.,59,reporting lack of tasks
+How's your stuff coming? I know there's been several emails going back and forth.,24,requesting status update
+"Still got about 200 locations, so there's only one [indecipherable] . We still have [indecipherable] from the previous two versions released, to do some debugging and [indecipherable]. It's not all of their pseudos ship-to codes. [indecipherable] pseudos.",18,reporting progress on debugging tasks
+He did say that.,41,acknowledging information
+"So, I'm trying to work it out.",66,expressing uncertainty
+"Oh, and just let them go through without an address?",42,asking for clarification
+Yeah. Exactly.,1,expressing agreement
+For the pseudos.,-1,unclear statement
+[indecipherable] pseudo code.,2,noise
+"There's about 20,000 assets that reference locations...Well, no, actually, there's about 20,000 locations referenced by assets that don't exist in every location. [inaudible] , so it's interesting. But anyway, so, we're working on locations.",44,providing project status update
+"OK. We're going to have to hang up in a minute, but I do want to bring up...Who's doing the parts that aren't conversion for [indecipherable] ?",18,requesting task clarification
+We haven't worked at our conversions.,29,reporting lack of progress
+"Why? Are you restoring the database backup there, Brian, once you've done your stuff?",-1,inquiring about database restoration process
+"I guess I can. We don't have to talk about that now, though.",55,deferring discussion
+"We don't. We've got to get off this call. My only concern is, Grady's on vacation next week and we're supposed to be doing this next Sunday, which, by the way, you and I need to get together and give them some kind of a, ""Yeah, you're going to be able to start work on Tuesday at name and date.""",14,expressing concern about scheduling
+"So, that's not this Sunday, but next Sunday.",22,clarifying schedule
+"That's correct. A week from Sunday, but because Grady's not going to be here next week, that's what made me think about...We've got to get all our ducks in a row so we know who's doing what, and who's needs to be available on that Sunday. Or if anybody needs to be available on Sunday. They might be able to come in Monday morning and do stuff. All right. It's 9:30. We'll hang up on you guys and call them.",19,planning resource availability
+All right.,1,noise
+"Thanks, bye.",10,expressing gratitude and closing conversation
+37] [background sounds only],0,noise
+Please enter your PIN.,52,noise
+41] [background sounds only],0,noise
+Hi. Who's on the call?,14,greeting and inquiry about participants
+Jim's on.,7,noise
+Hey Jim.,7,greeting
+[indecipherable] here.,2,noise
+"Hi, [indecipherable] .",2,noise
+DJ's on.,8,noise
+Hey DJ.,8,noise
+11] [background sounds only],0,noise
+Do you know [indecipherable] ?,2,noise
+Hi. Who just joined?,7,greeting and checking attendance
+This is Brian.,17,introducing oneself
+Hey Brian.,1,greeting
+Kevin.,17,noise
+Kevin.,17,noise
+"I don't have anything on my list for Frontier this morning. Brian, did you have anything that we needed to ask them on this call, or do we need another call to talk about conversion?",-1,checking for agenda items
+"This might be a two-minute question, so I think there was about, let me look real quick, it will take me a few seconds to get it up. I may need a couple more seconds.",54,requesting time extension
+19] [laughter],0,noise
+"We have, apparently, maybe just one or two more...The 3,258 locations that we [indecipherable] locations, but don't have via location information on them. This may be totally invalid, considering the data we're starting to get [indecipherable] . Do we need to convert the pseudos, must have a via location, or can this restraint be relaxed [indecipherable]?",18,requesting clarification on data requirements
+"Kevin. As we got back to the source, I guess I don't remember a pseudo ever being used. Do you? [indecipherable] make the request. I guess I'm leaning towards the...",23,expressing uncertainty
+I'm shipping to a pseudo?,23,requesting clarification
+Is that what Brian was talking about? The via [indecipherable] location.,18,seeking clarification
+"Yeah. I'm not aware of shipping to a pseudo, so I can treat those similarly to the way that we're treating the ones that we know how to ship to, information, but we don't have it, and I can put ship unknown on the via location.",23,clarifying handling of unknown shipping locations
+48] That way somebody can go in there and prioritize whether or not [indecipherable] to that direct location or somewhere else.,18,planning task prioritization
+"01] If that's OK with you guys [indecipherable] , so I need to send that out to the group, so it's going to be shipped unknown all together...",27,requesting approval to send update to group
+"I owe you guys an email explaining that, so I'll send that to you, and you can [inaudible] to whoever you need to. I'll explain the pseudo exchange [indecipherable] to [inaudible] . OK? [inaudible].",2,promising to send an explanatory email
+I don't think we had anything else for you all this morning. Do you all have anything for us that we need to discuss?,11,"checking for discussion topics
+requesting discussion topics"
+"Brian, I've got here, I think he deciphered these Verizon three warehouses, but I'll double check and [indecipherable] arrange to send something. I know they went back and forth a few times. It would be the [indecipherable] as far as what they're taking in to the setting, so I'll get back with you on that.",9,providing status update
+07] One urgent thing we have is Brenda's [indecipherable] back in my group. I don't know if Adam's on.,48,reporting an urgent issue
+We can't make them send...,27,reporting a problem
+23] [crosstalk],0,noise
+"test I think Tuesday the 15th, [indecipherable] received on the 7th. There were 41 items, and Adam meant that at that time we had not received or recorded any new equipment, and he says, so our concern is, was this a gap?",31,reporting a data discrepancy concern
+"49] Because we could manually add these, but we're going to have to do 2,460 that Larry's team ordered to replenish, that they would put high runners. It would be nice to know if the [indecipherable] interface is working correctly.",15,verifying system functionality
+"So you're saying that you've received new equipment [indecipherable] by looking at the wires? By wired information? But you haven't seen any of that evidence in LCAM, is that right?",9,seeking clarification
+Correct. [indecipherable] .,2,noise
+"It's still the same situation I reported last time. At this point, I haven't received any interface messages that indicate new equipment. I sent that message to Ron to get an update on when we would be receiving those, but I haven't received any contact back regarding new equipment.",46,providing status update on equipment delivery
+"I'm going to check with them and see if that's something we're missing here. Because it's new, it's coming direct from the vendor, they would place the unique bar code [indecipherable] they had it in, so I would assume [indecipherable] pulled it out of...",9,seeking clarification from external source
+"05] He'll pull it out wired, and we'll see how he does this. Check with the original PO to make sure they're all received, which normally isn't...We'll check on it.",-1,planning to verify requirements with product owner
+You'll let us know what Ron says?,16,requesting information update
+Yeah.,1,noise
+Thanks.,10,expressing gratitude
+"That's all I had. [indecipherable] , go ahead.",2,closing update
+"The only thing I had, I asked Drake for some of that information about moving databases. I'll take a look at that later today, and let you know if it works.",28,requesting information and planning to review it
+50] [pause],0,noise
+Nobody else had anything?,11,checking for additional input
+59] [crosstalk],0,noise
+All Right. Thanks everybody. We'll talk to you guys later.,58,closing the meeting
+05] [crosstalk],0,noise
+05] [background sounds only],0,noise
+[indecipherable] .,2,noise
+I thought Ron said he was going to call back [indecipherable] .,16,expressing uncertainty
+[indecipherable] .,2,noise
+Everything...,52,noise
+Wait a minute.,12,noise
+"I know. I'm like, ""Where did he go?""",-1,expressing emotion
+02] [crosstalk],0,noise
+As you move that down...,67,expressing progress or action in task
+"Oh, this one here needs to be [inaudible] .",2,noise
+08] [crosstalk],0,noise
+some are [inaudible] .,2,noise
+"Just a little bit better than [inaudible] . Coding's done. I just need to test it some more. End test, after Grady builds it.",2,"coding completed, testing pending"
+"Oh, OK. Then, you're done?",53,asking for status update
+Yep. I started on something else already.,51,started a new task
+Something else like what?,-1,requesting clarification
+Like [inaudible] screen for the...,2,noise
+One of their issues from the issues [inaudible] ?,2,requesting issue clarification
+Yeah.,1,noise
+"Where's everybody else, [inaudible] ?",2,noise
+I'm not sure.,35,expressing uncertainty
+He just showed up.,41,reporting attendance
+He's been here.,41,providing status update
+53] [laughter],0,noise
+"[inaudible] , right? We had this discussion.",2,expressing uncertainty
+56] [laughter],0,noise
+I didn't make you a bug. Do you want me to move one of these back?,36,asking about bug status or task adjustment
+[sighs] We'll make a bug.,36,expressing emotion
+[whispers] I don't want to make a bug. I just want to move these back.,36,expressing emotion
+It doesn't matter. I don't care. There's...,49,expressing emotion
+What's the bug?,36,requesting bug details
+It doesn't work.,37,reporting a bug
+What?,57,expressing confusion
+The grid stuff is just not right.,38,reporting a bug
+There's one bug.,36,working on a bug
+There's one bug?,36,inquiring about a bug
+"Yeah, there's one bug. The grid stuff is not right, so I don't want to write a bug. It's random, isn't it?",38,working on a bug
+"No, it's not random.",38,clarifying information
+"The drop-downs don't have drop-downs in them, so you can't filter by the drop-downs on the grid.",38,reporting a bug
+You can filter by the drop-downs on the grid.,38,describing a feature
+"Because he's modified it now, because you couldn't yesterday.",31,explaining a change due to previous inability
+That's [inaudible] .,2,noise
+The drop-downs.,38,reporting a bug
+"The drop-downs, that's the bug. Those didn't work.",38,reporting a bug
+"[laughs] That's what I said, the drop-downs.",38,expressing emotion
+Two drop-downs do not work.,38,reporting a bug
+"The filtering wouldn't work for me. It worked for him. It didn't work for me, or for payroll.",-1,reporting a bug
+Did you try it?,37,requesting confirmation
+Yeah.,1,noise
+Did you try real hard?,-1,asking about effort or progress
+[inaudible] reasons? Was it a network issue?,20,asking for clarification about issue cause
+"You're going to be done with that shortly anyway, right?",21,inquiring about task completion status
+Shortly.,22,noise
+"For real, this time. [laughs]",0,expressing emotion
+"We have check-in that [inaudible] and I've made changes to that screen too, so if you want...",2,providing status update
+34] [crosstalk],0,noise
+"You haven't done it since yesterday, though, right? Because it was yesterday after Ethan told me that you had checked your stuff in that I told him about it, and I told him you had already made changes to it so they needed to [inaudible] . You haven't done since yesterday on that screen, right?",31,confirming task status
+No.,1,noise
+"You're probably good, because it was after he told me that he had done his stuff that I told [inaudible] about it, [inaudible] .",2,expressing uncertainty
+"I have some counts on the headers I'd like to change a little bit, make a little bit more sense about what's in the details and test the duplicate [inaudible] thing a little more thoroughly just to make sure it's going to reach across different groupings and [inaudible] . The only thing I haven't started on yet is the multi-row payroll editing.",63,"proposing changes and testing  
+not started on a specific task"
+"They may not get that. We just may have to move that to the backlog. [laughs] ""Look, this is what you've got. Now what do you not like?"" Because you know they'll come back, and say they don't like something.",60,managing client expectations
+Yeah. I know for sure they're going to come back. There's stuff on the assets screen that they're able to edit but they can't edit on here right now. I know they're going to [makes complaining sounds] .,24,anticipating user complaints
+"We did have that story in the backlog about adding the ability to mass update, as a whole story. We had that one in the backlog, because Adam had not ever added the...It's like a whole separate story, so we can put this task under that. It's basically the same thing, right?",54,discussing backlog story and task organization
+It's exactly the same thing.,-1,confirming similarity
+"OK. Let's put that under that story. If they whine too much about not being able to mass update, we'll say, ""We have a story for that."" [laughs]",11,planning feature prioritization
+"Then I'm just going to do a merge after this, get the code from 109 back to the trunk.",52,updating the codebase
+Good.,4,expressing emotion
+"The release tomorrow that's going to them for 1.1, will have everything in it?",54,inquiring about release contents
+Yes.,1,noise
+We're going to have a build tonight on 10.10.,33,announcing a build schedule
+"No. I'm done giving them emergency releases. Because if we have to give them one [inaudible] , it's like, ""No, you're just not getting one next week. Deal with it for a week. When you get 1.1, then we'll start back up again.""",54,refusing emergency releases
+"We need to run database scripts this evening. I can run that script to update the project ID, to see if the columns are [inaudible] .",-1,requesting deployment
+You didn't do that last night?,59,asking for status update
+No. I forgot to. I'm sorry.,39,expressing apology
+"Did you run on the SEC stuff last night, when you did the deploy?",29,inquiring about deployment activities
+"No, I didn't. I forgot that too.",39,expressing forgetfulness
+"OK. [laughs] I was just asking, so if they ask me I'll know what to tell them next time.",36,seeking clarification for future communication
+Throw Grady under the bus this time.,19,expressing emotion
+Yeah. Throw me under the bus.,19,expressing emotion
+"If they don't ask, I'm not going to say anything.",55,expressing intention to withhold information unless asked
+"Those fix-it scripts, do those need to be run in our development test environments to bring anything up-to-date, or are those only data changes?",24,asking for clarification on scripts usage
+"The one to widen the two project-related fields. Yeah, I need to run that.",40,working on a task
+Those should be scripted then?,64,seeking clarification
+Yeah. They're scripted. They're in the 109 script.,64,providing information about scripts
+Development?,52,requesting update on development status
+"I can't remember if I ran that section against dev or not, I'll double-check.",40,verifying task completion
+"Do I need it? I think I do. I haven't checked in the merge yet, but when I did I saw everything from 105 to 109 went back to the trunk which I presume has not been run in our dev and test environments yet.",40,inquiring about necessity of a task
+Not in the test. I haven't deployed in test for a long time. I've been deploying in conversion.,29,reporting deployment status
+The only place it's been is that [inaudible] .,2,noise
+38] [crosstalk],0,noise
+Next time you do just remember that you have to go back and run all the...,67,providing a reminder
+105 through 109.,-1,noise
+The 1-0whatevers. At least get each of them run once at some point to bring it up to...,49,discussing test coverage
+In dev.,40,working on a task
+current whatever. The scheme in this introduction.,-1,noise
+My assumption is whoever adds to the database script runs that section that they're adding. They go ahead and do it in dev. That's the assumption I've been going on.,40,explaining a workflow assumption
+"In dev, that makes sense, but as far as test.",29,expressing uncertainty about testing environment
+Right. Whenever we deploy the test then I'll do that.,5,planning deployment tasks
+As far as I'm concerned you can deploy to test whenever you're ready and we can get back to using...,5,granting deployment permission
+Deploy 1.1 test.,29,requesting deployment
+Yeah. For next week...,22,planning future discussion
+33] [crosstalk],0,noise
+when you bring back the database we'll probably take that database and we'll put it on top of my test. That way my test has the latest and we'll quit using the conversion one and we can just go forward from there.,29,planning database update for testing
+After he does the merge then I'll deploy the test.,29,updating the codebase
+"That's fine, whenever it works for you. If it's one day next week that's fine, because I'll continue to test against conversion until after we get the latest one then we'll drop conversion and go back to using test.",29,scheduling flexibility for testing
+15] What I have that we need to talk to them about today. I'm going to ask them what they found out from monitoring the ports because I want to know. [laughs] Then the CTDI...,5,requesting information from client
+There's never a dull moment.,-1,expressing emotion
+Are you sure you want to know?,35,asking for confirmation
+32] [laughter],0,noise
+"I do, because if we have a problem we need to know, but I don't think we do.",55,expressing opinion on problem status
+That's not why you want to know.,35,expressing emotion
+38] [laughter],0,noise
+No. It's the second part of that because I don't think we do. I want them to know it's not our problem.,55,clarifying responsibility
+They don't care.,55,expressing emotion
+"I know, I care. Then CTDI and shift two. That's what I have to talk to them about. What do you all have?",68,stating discussion topics
+58] [laughter],0,noise
+58] [crosstalk],0,noise
+"The ""ship to,"" and ""ship,"" that...",46,expressing confusion
+I'm not touching that.,55,refusing to work on a task
+03] [crosstalk],0,noise
+03] [laughter],0,noise
+Code.,52,working on code
+The one they want to load is CLLIs in LCAM?,9,asking for clarification
+Yeah.,1,noise
+09] [laughter],0,noise
+No what they really wanted...I guess that was it.,57,expressing uncertainty
+They want to take the location code and...,13,explaining a requirement
+They want to take the location code and...,13,explaining a requirement
+put it in the CLLI field.,27,giving instructions
+put it in the CLLI field. It's crap.,-1,expressing dissatisfaction
+I know.,66,expressing agreement
+Use the industry standard.,45,requesting adherence to standards
+I'm talking about the...,47,noise
+"It does work, across applications.",37,confirming functionality
+Fuzzy Logic stuff.,-1,expressing topic or focus
+"Yeah, the Fuzzy Logic stuff.",-1,mentioning a topic or technology
+Can we give that to Kim too?,55,requesting task assignment
+He has it.,41,affirming possession
+He already has the Fuzzy Logic?,-1,asking for information
+He has it.,41,acknowledging possession
+It's in the conversion package.,29,providing information about code location
+"The conversion package. They don't understand it, but that's where it is.",-1,explaining a technical issue
+[laughs] It's somewhere in this [inaudible] box.,2,noise
+[inaudible] my hands.,2,noise
+"It's in Arabic too, by the way.",-1,providing additional information
+Upside down and backwards.,67,expressing confusion
+58] [crosstalk],0,noise
+58] [laughter],0,noise
+All right it's time to call them.,14,initiating a call
+Please enter the conference key.,56,noise
+05] [crosstalk],0,noise
+"He doesn't feel good today, so he took the day off and he was already taking tomorrow off.",59,reporting absence due to illness
+[inaudible] tomorrow.,2,noise
+"Hi, who's on the call?",14,requesting participant identification
+Jim [inaudible] .,2,noise
+Violet.,-1,noise
+Good morning. It's Kim.,7,greeting
+"Jim, Violet, and Kim. Anybody else?",7,initiating meeting attendance check
+DJ's here.,8,noise
+"Hey DJ. What I have on my list is, Kim did you have any luck with your port monitoring? What were you able to find out from that?",20,inquiring about task progress
+"It appears that it's a small sample, but two days, we have more ports in use today than we did yesterday about this same time. I don't know if there's something that is using those ports and then not releasing those resources.",20,reporting a potential resource issue
+"20] I also just got an email this morning that there's another server that has a similar issue, so I'm going to take a look at that and compare and contrast what's happening on our production servers with that server, so...",20,investigating server issue
+Kim when you say...,7,expressing confusion
+"it's nice to know we've temporarily fixed what was wrong with our production servers by rebooting them, I don't think that's a long-term solution.",20,reporting a temporary fix
+"Kim when you say they're using ports which port is it? Is it connections for the database server, or are they connections for the client Web browser?",20,asking for clarification about ports
+"I'm looking at the Web servers and using a tool called TCPView that I downloaded from the Microsoft site, and so it's looking at basically TCP ports.",-1,describing current task
+"Which TCP port, for which service?",-1,asking for technical details
+"Let's see, does it say?",54,expressing uncertainty
+"If it's HTTP ports, or HTTP traffic, I mean that would help narrow down what the potential problem could be. If it's the ports used by SQL server that could also, that points in one direction or the other, right?",20,analyzing potential causes of a problem
+"Right, this particular utility, it tells me what the addresses are that are being attached, so based on that we could probably tell what the local ports are and the remote ports.",13,explaining a technical detail
+"Off the top of my head, if you could narrow it down. Is it network traffic related to the Web servers going to the client, or traffic going back to the database?",-1,requesting clarification
+I'm not even sure that this is what caused the issue. But I was tracking some of the errors out of the event log and one of the suggestions pointed me to this utility as a way to monitor. I'm trying to remember.,54,expressing uncertainty about issue cause
+"00] I think it actually said that if it ran out of ports it would match up with some of the things that we've been seeing where it appeared to be a network issue, but maybe it's actually not the network maybe it's the interface on the servers running out of resources, making it appear that the issue was a network issue. But as I gather more information I'll let you know.",20,analyzing issue cause and gathering information
+OK.,4,noise
+OK.,4,noise
+Ask him what's on the other server that you're talking about?,-1,requesting information about server contents
+Pardon?,-1,noise
+What's on the other server that's having similar issues that you were talking about?,20,requesting information about server issues
+Actually it was one of the disaster recovery servers.,20,providing information about infrastructure
+"Right, and so that's what, again, doesn't make any sense and you might want to look at your remedy tickets because it seems like the virtual server for LCAM in Fort Wayne, you just got a remedy ticket on it?",-1,pointing out an inconsistency and suggesting to check remedy tickets
+"Yes, that's what I'm looking at.",21,confirming understanding
+"Yeah, again, did Roger ever come back to say there was anything else, any other server in that data center that was having issues?",20,inquiring about server issues
+"I chatted with him this morning, I IMd with him this morning and he said that there's nothing else that he's aware of, that he's heard of, or seen that would be similar to what we're experiencing.",65,reporting status update from communication
+"At some point you can certainly get Matt involved, since they're his virtual servers, and ask him to put some resources towards it.",48,requesting resource allocation assistance
+"He contributed a little yesterday. He responded to my email so I plan to pursue this with him too, thanks.",48,providing status update
+"OK, thank you.",21,expressing gratitude
+"The other thing that I had on my list was the CTDI interface and the ship to email that came out this morning. I don't know what our options are at this point and we don't have time to make code changes, so I don't think putting the ship to codes in as CLLIs is a viable solution.",13,discussing implementation constraints
+"50] If we put them in it's the same as making up dummy CLLIs because they're not going to have all the information that they need to be real CLLIs. We won't have exchange or all the information, right?",13,expressing concern about data completeness
+"Yeah I feel bad. I thought we could get there. I keep running into dead ends but I guess the question, ""Did we attempt to go by the address, city, state comparison?""",42,"expressing emotion
+asking a clarifying question"
+"No we haven't because initially the ship orders were going to come from LCAM and we wouldn't have this problem because we would have had the locations. Now that all ship orders from CTDI are going to initiate through the Afinium and all they have is location information, so that's the genesis of the problem. We just found out two weeks ago is it?",23,explaining the cause of a problem
+"Yeah, a week-and-a -half, two weeks.",51,providing time estimate
+"That they didn't have CLLIs because initially they were thinking that the ship to codes, or the to location codes were CLLIs. But, no we haven't tried to do the Fuzzy Logic Lookup.",6,explaining a technical issue
+"Does Mike [inaudible] , does he have the complete set of data elements or the Afinium ship to locations that he called a CLLI but it wasn't a CLLI? Does he have that?",30,requesting information about data completeness
+"From what I've seen, I've only seen the location code and address. I don't remember anything else from that spreadsheet.",13,reporting current knowledge status
+"What do you mean by ""address""?",13,requesting clarification
+"Cities, states, zip.",42,providing data elements to consider
+It did have the street?,57,asking for clarification
+"I'm pretty sure, but I'll have to look at that spreadsheet again to...",13,expressing uncertainty
+"I think it did from what I remember from what you sent me, it had a street.",42,providing information based on memory
+"Yes, pretty sure it had the street on there, too.",42,confirming information
+"I think it had a location name there, too, or something like that.",44,providing information or clarification
+Did it?,57,seeking confirmation
+"It had two street address fields. One of them was the actual street address. The other wasn't a street address in that field name street address, but it was like, ""Street address, line two,"" or something like that...",13,explaining data field details
+49] [crosstalk],0,noise
+"That was from CTDI what they got from Afinium? We're talking the same thing, right?",68,seeking clarification
+"It was probably on the spreadsheet that Mike sent, I think. Let's see.",13,referencing a document
+06] [pause],0,noise
+If you're leaving it on me I don't have any options right now. Somebody else can assist. I don't know.,63,expressing limitation or inability to assist
+31] [pause],0,noise
+"Yes, I don't know what our options are right now, Jim. Let's see. I'm looking at the spreadsheet. We do have the street address, city, and ship to source code. Wait a minute. Some of these look like CLLIs.",13,expressing uncertainty
+"Yes, some of their location codes they have made look similar to CLLIs. Some of them have underscores in them. Some of them have...",6,providing information about data format
+"Like the one example I sent, Marion, Maine, I just picked it because that's where I live, but coincidentally the street address was the same. I know we have all sorts of versions out there so that wasn't meant to act like, ""Oh, this is easy to do.""",42,providing context and clarification
+"47] But Kevin and I went down different paths with some Afinium people but we kept going down these paths, and it's like, there was no table that gave those Afinium ship to type locations tied to anything we could map actually there.",30,describing a problem encountered
+Even if we put those in...,34,expressing uncertainty
+"I was like you. I was waiting for procurement to come through. I kept thinking, ""Well, he must have something."" Then Tom's last email was like, ""Oh...""",65,providing status update
+"Even if those do look like CLLIs they still don't have...They don't have the company, like the Afinium company and the OACs.",6,reporting missing data elements
+We're left with the same situation.,60,providing status update
+"That's what I mean, that's where we're left.",47,summarizing current status
+It still doesn't help us because it's still going to...,37,expressing concern about issue persistence
+"Right. Exactly, because...",47,noise
+"Yes, they weren't CLLI codes. They had sometimes a full name, sometimes part name, sometimes...Like, Marion had, ""Marion 222,"" on it, because that's the street address, but then those is what we were trying to tie to at least some kind of Afinium company, and that's where we came to dead ends. They don't do that in their world.",6,explaining data inconsistency issues
+"What about a combination of city, state and zip? Would that get us pretty close to an Afinium company?",13,inquiring about data matching criteria
+I think it would. I'd leave the street address off if you still don't get multiple hits.,42,providing a suggestion
+"There's two options, maybe three. Somebody goes in and hand-jams brand-new CLLIs for all of these location codes that they've got, and then somebody at CTDI would have to tie those location codes back to the CLLI code change on their part.",13,discussing implementation options
+"08] Number two is use some sort of Fuzzy Logic magic to group up data in that spreadsheet to data in LCAM to get a CLLI so that they can map a location code to the CLLI code change on CTDI's part. Or number three, we force all of the location codes into the CLLI field, which probably won't work, because I thought I saw some that were larger than 13 characters, and they don't follow a normal path.",13,discussing data mapping challenges
+42] [crosstalk],0,noise
+"We may be able to just take the first 11 or 13 of it and have the rest of it in something else, and they would send over the raw location code coaching on our part. There's only three options.",13,discussing data handling approach
+I do believe...,67,expressing emotion
+03] [crosstalk],0,noise
+"Mike was willing, if we could...",30,expressing willingness
+07] [background conversation],0,noise
+"was hoping it just had a one-to-on match to it up-front, before I send it to you.",-1,requesting clarification or confirmation
+"What was that, Jim?",7,requesting clarification
+"I think Mike [inaudible] , if we did have the mapping one-to-one for the Afinium location to ship via CLLIs for LCAM I think he was willing to do that on his end up-front.",30,discussing data mapping approach
+If we send a one-time cross...?,-1,asking for clarification
+39] [crosstalk],0,noise
+Yeah.,1,noise
+Could we get the low-hanging fruit right now? There's always going to be...,60,requesting prioritization of easy tasks
+What's that?,57,expressing confusion
+"Can we get the low-hanging fruit right now? There's obviously going to be some of that stuff matches perfectly, right? Everything matches on address perfectly.",42,requesting quick wins
+"54] I don't know how many that would end up being, but that seems like it would be a pretty simple query to perform is just take what we have on that spreadsheet, take what we have in LCAM, do a join based on the address fields.",13,proposing a data query approach
+"11] There might be 10,000 location codes in there. You might end up with a thousand matches, but at least that's a thousand that you would have that we don't have to look at again. That would be low-hanging fruit to me.",68,suggesting an approach to reduce workload
+That could be done by someone else other than you.,-1,suggesting task delegation
+Yes. I'm strapped...,-1,expressing emotion
+I know.,66,expressing acknowledgment
+right now. I'm trying to do the Verizon thing.,20,describing current work task
+"Jim, is the list that Mike sent out, is that an exhaustive list? Because he only sent out of 300 and something ship to codes or location codes.",18,asking for clarification about list completeness
+"Let's see. That's the other problem. I'm getting a lot of different lists, working on different projects. What list was that?",43,expressing confusion
+That was an email from...Actually that was from you.,48,acknowledging message source
+10] [laughter],0,noise
+"Initially Mike sent it out. It was called, ""Missing,"" underscore, ""CLLI,"" underscore, ""Code.""",52,describing a previous action
+"I took care of that. That was unrelated. That's another project. Sorry. They sent another one out for me to find the OAC. I was wondering if it was this project, but he clarified it wasn't.",40,clarifying project scope
+Oh.,1,noise
+"That's why I was asking earlier, ""Have we really ever gotten a complete list so we know what we're dealing with?""",43,requesting information validation
+Do we actually need the list of ship tos and addresses from Afinium?,23,requesting clarification on data requirements
+He might have the same copy. I'd rather get it from him if that's where we're...,27,discussing source of information
+"That makes sense, because it's his data.",20,acknowledging information
+That's fine.,4,acknowledging agreement
+He gets it from Afinium. He's already been set up with Afinium for a while.,30,providing status update
+"We need to get that list, and then if we can do like Brian said, just be able to get an exact match on the address information, then we can find the CLLI based on that. I don't know how many would be an exact match versus ones that are close.",13,discussing data matching approach
+"Yes, if you had his list, say the primary fields are the Afinium locations, of whatever they call it, ship to, and then the address, city, state, zip code, and I liked Brian's first suggestion if you just go by the city, state, zip code and then maybe list them all side by side, and then the ones that match versus the ones that didn't, we could possibly get somebody to help manually do some of those to at least get started.",13,discussing data fields and manual data matching approach
+"15] Or if your first pass is with the city or the address, then the second pass leave that out and see if it's close. Does Afinium or LCAM, what's your quantity of ship via CLLIs?",30,requesting information
+I don't know how many we have.,11,expressing uncertainty
+That's a good question.,35,expressing emotion
+I was just looking at that.,55,expressing progress status
+Let me get with Mike. I'll have him send what he has. If he doesn't then I'll have to get with Afinium's whole team to see if we can get what they have.,30,coordinating information gathering
+If you can get that to us as soon as you can then we'll go from there.,27,requesting prompt delivery
+All right.,1,noise
+"OK. I guess if we're through talking about that the third thing on my list was...I don't know. I heard somebody else join. Was that Ron, by any chance? OK, I guess not. The Shields interface stuff I know Brenda sent another email this morning, and we've looked briefly at that.",48,providing status update
+"39] All those shipments for new equipment yesterday that came from Shields were sent as good equipment. This morning they started sending new equipment as ""adds,"" like they should be. The stuff that Brenda sent the emails about this morning that we'll have to clean up to get them to go into LCAM.",9,reporting an update on equipment shipments and data cleanup requirements
+Who does the clean up?,-1,inquiring about task responsibility
+We do.,11,affirmation
+OK. I couldn't remember.,35,expressing uncertainty
+"It'll be me, or Adam, or Grady. One of us will be working on that.",19,assigning responsibility for a task
+He didn't set it up yet?,59,inquiring about setup status
+"Well, apparently he did it maybe instead of...I thought it was supposed to be the night before last at midnight, but apparently that didn't happen, and maybe it happened last night at midnight, because we did see some that came in early this morning that were adds and that's as far as we got to look.",59,providing status update on task timing
+"Yes, the first ones came in about 4:28 this morning Central. I don't know which time zone that is, but 4:28 this morning was when the first new equipment message was received.",9,reporting event timing
+All right. OK.,4,noise
+"Yes, so we'll work on cleaning up those previous ones that they sent that were sent with incorrect information, and anything from today forward we can hope that it's working correctly. [laughs] Like I said, we haven't had a chance to follow it all the way through and make sure, but it did create assets.",24,providing a status update
+"The assets are getting written on, the ones I've checked. Even the one we looked at this morning, it did get written on.",24,reporting work progress
+OK. I must have been putting in the pin wrong.,56,acknowledging mistake
+Good.,4,expressing emotion
+"[inaudible] , but so far, things are getting written on as expected.",2,providing progress update
+"I guess that was the last really untested part of the interface that we had. Right now we can cross our fingers and say that we're good with that interface. [laughs] We think we're good with that interface, anyway. That was all I had on my list. Did you all have anything that we needed to talk about this morning?",11,"reporting task completion  
+requesting updates or agenda items"
+"Susan, you sent an email, I guess it was this morning, about the conversion schedule for Verizon. I think your start time is off by a couple of days. From emails I've seen...",62,pointing out a scheduling discrepancy
+A couple of days?,65,asking for clarification
+we're not going to have the data until after the 2nd.,20,providing project update
+Oh my God. [laughs],0,expressing emotion
+We would be starting either very late on the 2nd or early on the 3rd of April.,-1,scheduling start date
+"What I had on April 1st was that you would cut off access to LCAM so that we could do a backup of your production database, and then LCAM would remain down until all the conversion was done. Is that not the plan?",45,confirming planned procedure
+50] [crosstalk],0,noise
+We're actually not going to get the data until maybe early on the 3rd. There's really no reason to take down the database on the 1st...,20,providing project update
+08] [crosstalk],0,noise
+"Let's back up a little bit, because...",60,requesting clarification
+on the application.,-1,noise
+It's 12 hours' worth of work.,26,estimating work effort
+"Let's back up a little bit. I do see some hours that Alden needs to do some work. If we take it down at 5:00 PM Pacific Time on the 1st and leave it down, I am pretty sure, unless Kim or Larry or we need to be in there for some reason, there is nobody going to be using that database. If it's imperative for Alden to have it after 5:00 PM on the first...",62,planning database downtime
+No. We don't care.,34,expressing disinterest
+I don't have an issue with that.,55,expressing no issue
+It's just going to take us that many hours to do the work. You tell us...,26,estimating task duration
+54] [crosstalk],0,noise
+you and Larry and Kim think about that.,55,requesting consideration
+"What she's saying will help us out, so...",67,acknowledging helpful information
+Yeah.,1,noise
+It will help us out.,-1,expressing benefit
+"Jim you have to drop [inaudible] , so do you want to weigh in on that?",2,requesting input
+That's why I put it that way.,55,expressing reasoning
+"[inaudible] . Kim, what do you think the issues are, taking it down? We asked for techs to be available on Saturdays, and they say they do not schedule work on Saturdays. Unless Jim or Larry or our team's going to be in there on Saturday, I don't see...",22,expressing concern about scheduling conflicts
+32] [crosstalk],0,noise
+"When we did a look at the data that was falling into [inaudible] , I haven't looked at the data falling into LCAM, but nearly every Saturday and Sunday, weekend days, and even sometimes holidays, we saw transactions falling into [inaudible] from people doing scanning.",45,reporting data observation
+"No, they weren't, because we will turn them off.",-1,confirming an action plan
+"It was very much reduced from the weekdays, but there were still some transactions.",59,reporting progress
+"I think to DJ's point, by stopping on Friday afternoon, it allows us to get about half of the work that we have to do done Friday evening instead of eight hours or nine hours of work, total, that we have to do...If we don't bring it down on Friday night, and we can't bring it down until Saturday, you're not going to be back up Monday morning, because it takes us longer. The hours are on there.",59,explaining work schedule impact on deployment timing
+"ISO43, like at 4:00 PM Pacific...Anyway, it doesn't matter. I don't think it's any big deal. I'll check with Jim, because he has a drop. At this point, Susan, just plan on having it by 5:00 PM Pacific on the 1st.",22,providing status update
+"OK. Kim, will you be able to do the, I think it was step seven?",55,requesting task confirmation
+He probably doesn't know...,59,expressing uncertainty
+Which is the scripts.,52,asking for clarification
+"Sure, I can run the scripts. Are they scripts that I need to create, or scripts that you're creating and you just need me to launch?",64,seeking clarification about task requirements
+"I've created some scripts. I would do it, personally, but sometimes our VPN connection is a little iffy and to have it drop in the middle of like extracting the assets, that could be a two-hour process. That would be quite painful.",64,explaining work approach and challenges
+"57] If it's possible, if I can give you those scripts, that would be a great help to me, a great benefit to me, to get you to run those on your network, without actually having to have a VPN established. Or, if you could point me to a...",64,requesting assistance with script execution
+"Yes, that's something I can do.",21,agreeing to take a task
+"database server that I can remote into and execute the scripts, I could do that as well. The main thing I'm trying to get around is having a VPN drop and the extract stop.",-1,explaining technical challenge
+"Yes, I can do that.",21,agreeing to a request
+Thank you very much.,10,expressing gratitude
+"Thanks. For now, we'll just assume that schedule is good enough. If something comes up and changes that, then you all just let us know, and we'll go from there. Anything else we need to talk about? I know it's been a long call, but we have a lot going on. [laughs]",11,confirming schedule and communication plan
+"Yeah, Susan, no rush on the email I sent yesterday for the change request. I know they want to take their time and do it right and give as correct an estimate as possible. We did our best-guess scenario, and that's all we could do. I wanted to let you know not to have to push that through faster than they wanted to do it.",15,providing status update on change request estimation
+"OK, great, because that was one of the whole things that was weighing on me, because I'm like, ""I don't know when we're going to have time to get together and do these estimates, because we have all this other stuff we're trying to get done.""",26,expressing concern about scheduling estimates
+"I know, and I did not expect the window to close that quickly. I should be getting used to it, I should be used to it, but I keep thinking something's going to change. But don't worry about it.",62,expressing uncertainty and reassurance
+"OK, thanks. Anything else anybody had? No? All right, thanks, everybody.",52,closing the meeting
+Have a good day.,10,closing the meeting
+Bye.,10,closing the conversation
+Message,56,noise
+[inaudible],2,noise
+00] [laughter],0,noise
+It was an expensive trip.,-1,expressing emotion
+[inaudible],2,noise
+00] [crosstalk],0,noise
+"[laughs] I'm sure he said that about me, because I have three cars, [laughs] and there's only two of us living at home, so I don't care. [laughs]",36,expressing emotion
+"But they're all, I mean your Acura...",-1,noise
+A banker sold it finally. That was when we had four.,60,noise
+That was when you had four?,-1,asking for clarification
+35] [laughter],0,noise
+"Counting Bobby's work car, five. [laughs] I'm not counting his when I say we have three. We have four.",49,expressing status of work items
+So you're the reason why there's global warming. I see how it is.,-1,expressing emotion
+I only drive like ten miles a day.,-1,noise
+"Well, she doesn't drive them all all at once. [laughs]",-1,expressing emotion
+57] [crosstalk],0,noise
+57] [laughter],0,noise
+57] [phone rings],0,noise
+Hello.,1,greeting
+Hello,14,noise
+59] [phone rings],0,noise
+That is a loud [inaudible] .,2,noise
+"[inaudible] Hang on, I've got to go put you on mute for a minute.",2,noise
+OK.,4,noise
+08] [phone rings],0,noise
+That is a loud phone.,62,noise
+What? I'm deaf now. I can't hear anything.,-1,expressing emotion
+[laughs],0,noise
+He must have a desk phone and a cell phone.,62,expressing a requirement
+I'm sorry.,4,expressing apology
+That's OK.,4,expressing acceptance
+Did you [inaudible] on my ticket?,2,requesting status update on a ticket
+[laughs],0,expressing emotion
+So testing with CT [inaudible] . I know you did that yesterday. We haven't heard anything back from them.,5,requesting status update
+"They sent out an email late yesterday, and I checked on them...",9,providing status update
+We haven't heard anything since you checked.,65,requesting update
+"Not since my reply to that, no.",-1,providing status update
+"Actually, [inaudible] . So, this report?",2,noise
+"Oh, there's the mouse cursor. [inaudible] the mouse cursor. I think I'm close to getting it fixed. I should finish it today. Null and blank [inaudible] have been my enemy.",2,working on a bug
+Everybody's enemy [inaudible] sequel.,-1,noise
+16] [crosstalk],0,noise
+[laughs],0,noise
+[inaudible] decide among us how we're going to deal with nulls and blanks?,2,requesting decision on handling nulls and blanks
+"I know. It's like [inaudible] prepares things like this [inaudible] not be null, and I swept up, so...",2,noise
+Do we have anything for them other than...,11,requesting information
+Help.,52,expressing emotion
+Can we [inaudible] finalized spreadsheet of users so we can go ahead and import them?,-1,requesting data to proceed with import
+Yeah.,1,noise
+"If somebody wants to do that for me, that would help me out.",21,requesting assistance
+"[laughs] That won't be me, so he's asking the two of y'all if y'all have time to import users into [inaudible] .",2,requesting availability for task
+"OK, send it normally. [inaudible]",2,confirming action
+Beat you to it.,66,expressing emotion
+42] [laughter],0,noise
+42] [crosstalk],0,noise
+"Rock, paper, scissors?",-1,noise
+"A warehouse full of hungry children to feed come Monday, so...",46,expressing personal circumstance
+What's going on with DC three?,-1,requesting status update
+"Barry is sending four people to Conyers, Georgia to inventory a warehouse full of test equipment.",46,assigning team to on-site inventory task
+14] [crosstalk],0,noise
+"They're going to put acid tags on all of them, one location they have a list of what they think is in there. The other location they don't have anything. In the process of taking a copy of a wireless code, Carol's project, stripping out all the weird accounting stuff they have in there, and they're going to use that as a code base [inaudible] .",45,describing current work progress
+[inaudible],2,noise
