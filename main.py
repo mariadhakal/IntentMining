@@ -94,9 +94,9 @@ def run_intent_mining(texts, initial_distance=0.3, initial_min_samples=16,
 def main():
     parser = argparse.ArgumentParser(description='Intent Mining using ITER-DBSCAN')
     parser.add_argument('--input', '-i', required=True, help='Input data file path')
-    parser.add_argument('--text-col', default='text', help='Name of text column (default: text)')
-    parser.add_argument('--label-col', help='Name of label column (optional)')
-    parser.add_argument('--output', '-o', default='clustering_results.csv', help='Output file path')
+    parser.add_argument('--text-col', default='message', help='Name of text column (default: text)')
+    parser.add_argument('--label-col', default='Intents', help='Name of label column (optional)')
+    parser.add_argument('--output', '-o', default='clustering_results_IM.csv', help='Output file path')
     parser.add_argument('--initial-distance', type=float, default=0.3, help='Initial distance parameter')
     parser.add_argument('--initial-min-samples', type=int, default=16, help='Initial minimum samples parameter')
     parser.add_argument('--delta-distance', type=float, default=0.01, help='Distance change per iteration')
